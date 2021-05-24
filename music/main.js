@@ -58,14 +58,14 @@ window.addEventListener('wheel', onWheel, {once:true, passive:false})
 let startY;
 function onTouchStart(e){
     startY = e.touches[0].clientY;
-    console.log(startY);
 }
 
 function onTouchMove(e){
     window.removeEventListener('touchmove', onTouchMove);
     let diff = startY - e.touches[0].clientY;
+    console.log(diff);
 
-    if(diff < 0){
+    if(diff < -10){
         switch(currentPage){
             case "first":
                 break;
@@ -76,7 +76,7 @@ function onTouchMove(e){
                 currentPage = "second"
                 break;
         }
-    }else{
+    }else if(diff > 10){
         switch(currentPage){
             case "first":
                 currentPage = "second"

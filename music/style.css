@@ -70,8 +70,10 @@ ul{
 .player-background{
     width: 100vw;
     max-width: 100%;
-    height: 700px;
+    height: 90%;
+    max-height: 700px;
     background-image: url(./src/images/music1.jpg);
+    background-size: 600px;
     background-repeat: no-repeat;
     background-position: center;
     transition-duration: 1s;
@@ -154,5 +156,8 @@ ul{
         color: white;
         font-size: 16px;
         transition-duration: 1.5s;
+    }
+    .player-background{
+        background-size: contain;
     }
 }

@@ -15,7 +15,6 @@ loadJSON((json) => {
 
 function setMusic(){
     if(musicInfo){
-        console.log(currentMusic);
         let music = musicInfo.musicInfo[currentMusic];
         playerBackground.style = `background-image: url(./src/images/${music.albumImg})`;
         profile.src = `./src/images/${music.singerName}.jpg`

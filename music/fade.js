@@ -17,7 +17,11 @@ function handleScroll() {
 
     if(isElementUnderBottom(intro, -10)) {
         intro.style.opacity = "0";
-        intro.style.transform = 'translateX(70px)';
+        if(window.screen.width > 600){
+            intro.style.transform = 'translateX(70px)';
+        }else{
+            intro.style.transform = 'translateY(70px)';
+        }
     }else{
         intro.style.opacity = "1";
         intro.style.transform = 'translateY(0)';

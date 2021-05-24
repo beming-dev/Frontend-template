@@ -58,23 +58,13 @@ window.addEventListener('wheel', onWheel, {once:true, passive:false})
 let start = 0;
 let end = 0;
 function onTouchStart(e){
-    start = e.touched[0].clientY;
+    console.log(1);
+    start = e.touches[0].clientY;
 }
 function onTouchEnd(e){
     end = e.changedTouches[0].clientY;
     let diff = start - end;
     if(diff > 0){
-        switch(currentPage){
-            case "first":
-                break;
-            case "second":
-                currentPage = "first"
-                break;
-            case "third":
-                currentPage = "second"
-                break;
-        }
-    }else if(diff <0){
         switch(currentPage){
             case "first":
                 currentPage = "second"
@@ -83,6 +73,17 @@ function onTouchEnd(e){
                 currentPage = "third"
                 break;
             case "third":
+                break;
+        }
+    }else if(diff <0){
+        switch(currentPage){
+            case "first":
+                break;
+            case "second":
+                currentPage = "first"
+                break;
+            case "third":
+                currentPage = "second"
                 break;
         }
     }

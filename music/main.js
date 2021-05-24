@@ -55,27 +55,17 @@ window.addEventListener('wheel', onWheel, {once:true, passive:false})
 
 
 //mobile
-let start = 0;
-let end = 0;
+let startY;
 function onTouchStart(e){
-    console.log(1);
-    start = e.touches[0].clientY;
+    startY = e.touches[0].clientY;
+    console.log(startY);
 }
-function onTouchEnd(e){
-    end = e.changedTouches[0].clientY;
-    let diff = start - end;
-    if(diff > 0){
-        switch(currentPage){
-            case "first":
-                currentPage = "second"
-                break;
-            case "second":
-                currentPage = "third"
-                break;
-            case "third":
-                break;
-        }
-    }else if(diff <0){
+
+function onTouchMove(e){
+    window.removeEventListener('touchmove', onTouchMove);
+    let diff = startY - e.touches[0].clientY;
+
+    if(diff < 0){
         switch(currentPage){
             case "first":
                 break;
@@ -86,12 +76,26 @@ function onTouchEnd(e){
                 currentPage = "second"
                 break;
         }
+    }else{
+        switch(currentPage){
+            case "first":
+                currentPage = "second"
+                break;
+            case "second":
+                currentPage = "third"
+                break;
+            case "third":
+                break;
+        }
     }
     pageMove(currentPage);
+    setTimeout(() => {
+        window.addEventListener('touchmove', onTouchMove, {once:true, passive:false});
+    }, 600)
 }
 
-window.addEventListener('touchstart', onTouchStart);
-window.addEventListener('touchend', onTouchEnd);
+window.addEventListener('touchmove', onTouchMove, {once:true, passive:false})
+window.addEventListener('touchstart', onTouchStart)
 
 
 

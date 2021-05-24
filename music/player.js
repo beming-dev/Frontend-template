@@ -3,6 +3,7 @@ let btnPrev = document.querySelector('.fa-chevron-left');
 let btnNext = document.querySelector('.fa-chevron-right');
 
 let profile = document.querySelector('.profile');
+let singerIntro = document.querySelector('.singer-intro');
 let playerBackground = document.querySelector('.player-background');
 
 let musicInfo = null;
@@ -18,6 +19,7 @@ function setMusic(){
         let music = musicInfo.musicInfo[currentMusic];
         playerBackground.style = `background-image: url(./src/images/${music.albumImg})`;
         profile.src = `./src/images/${music.singerName}.jpg`
+        singerIntro.innerHTML = music.intro;
     }
 }
 

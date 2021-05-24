@@ -1,5 +1,5 @@
-let firstPageHeight = document.getElementsByClassName('header')[0].clientHeight;
-let secondPageHeight = firstPageHeight + document.getElementsByClassName("first-page")[0].clientHeight;
+let firstPageHeight = 0;
+let secondPageHeight = document.getElementsByClassName('header')[0].clientHeight + document.getElementsByClassName("first-page")[0].clientHeight;
 let thirdPageHeight = secondPageHeight + document.getElementsByClassName("second-page")[0].clientHeight;
 
 let currentPage = "first";

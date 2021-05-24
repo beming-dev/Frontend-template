@@ -5,13 +5,22 @@ function isElementUnderBottom(elem, triggerDiff) {
 }
 
 function handleScroll() {
-    const elem = document.querySelector('.profile');
-    if(isElementUnderBottom(elem, -10)) {
-        elem.style.opacity = "0";
-        elem.style.transform = 'translateY(70px)';
+    const profile = document.querySelector('.profile');
+    const intro = document.querySelector('.singer-intro');
+    if(isElementUnderBottom(profile, -10)) {
+        profile.style.opacity = "0";
+        profile.style.transform = 'translateY(70px)';
     }else{
-        elem.style.opacity = "1";
-        elem.style.transform = 'translateY(0)';
+        profile.style.opacity = "1";
+        profile.style.transform = 'translateY(0)';
+    }
+
+    if(isElementUnderBottom(intro, -10)) {
+        intro.style.opacity = "0";
+        intro.style.transform = 'translateX(70px)';
+    }else{
+        intro.style.opacity = "1";
+        intro.style.transform = 'translateY(0)';
     }
 }
 

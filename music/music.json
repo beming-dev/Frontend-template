@@ -2,11 +2,13 @@
     "musicInfo":[
         {
             "singerName":"tom",
-            "albumImg":"music1.jpg"
+            "albumImg":"music1.jpg",
+            "intro":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia labore nihil veritatis officiis similique? Unde, est? At, suscipit adipisci fuga ratione excepturi perferendis officiis? Incidunt, voluptatum. Quisquam neque hic magnam?"
         },
         {
             "singerName":"ash",
-            "albumImg":"music2.jpg"
+            "albumImg":"music2.jpg",
+            "intro":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia labore nihil veritatis officiis similique? Unde, est? At, suscipit adipisci fuga ratione excepturi perferendis officiis? Incidunt, voluptatum. Quisquam neque hic magnam?"
         }
     ]
 }

@@ -11,10 +11,48 @@ body{
     overflow: hidden;
 }
 
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-toggle{
+    font-size: 30px;
+    color: white;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none !important;
+  }
+  
+.visuallyhidden {
+    opacity: 0;
+}
+
+.navigation{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+    z-index: 10;
+}
+
+.navigation li{
+    color: white;
+}
+
 .header{
     width: 100vw;
     height: 150px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .player-background{
@@ -25,6 +63,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     transition-duration: 1s;
+    transition-property: background-image;
 }
 
 .player-foreground{
@@ -69,7 +108,7 @@ body{
     max-width: 100%;
     height: 100vh;
     background-color: bisque;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .third-page{
@@ -78,12 +117,19 @@ body{
     width: 100vw;
     max-width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .third-page .profile{
     width: 30%;
-    transition-duration: 1s;
+    transition-duration: 1.5s;
     margin-left: 20px;
     border-radius: 10px;
+    margin-right: 20px;
+}
+
+.third-page .singer-intro{
+    color: white;
+    font-size: 16px;
+    transition-duration: 1.5s;
 }

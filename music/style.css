@@ -20,8 +20,8 @@ ul{
     font-size: 30px;
     color: white;
     position: fixed;
-    top: 15px;
-    right: 15px;
+    top: 5%;
+    right: 5%;
     z-index: 1000;
     transition-duration: 0.5s;
 }

@@ -1,0 +1,12 @@
+{
+    "musicInfo":[
+        {
+            "singerName":"tom",
+            "albumImg":"music1.jpg"
+        },
+        {
+            "singerName":"ash",
+            "albumImg":"music2.jpg"
+        }
+    ]
+}

@@ -141,6 +141,7 @@ li{
     align-items: center;
     overflow-x: hidden;
     padding: 10px;
+    transition-duration: 1s;
 }
 
 .second-page .popular-box img{
@@ -150,8 +151,8 @@ li{
     transition-duration: 0.5s;
 }
 
-.second-page .popular-box img:hover{
-    width: 20%;
+.second-page .popular-box .popular:hover{
+    transform:scale(1.2)
 }
 
 .second-page .popular-box .center{

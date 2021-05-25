@@ -129,7 +129,36 @@ li{
     height: 100vh;
     background-color: bisque;
     background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.second-page .popular-box{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+.second-page .popular-box img{
+    width: 15%;
+    height: fit-content;
+    margin: 0 1.25%;
+    transition-duration: 0.5s;
+}
+
+.second-page .popular-box img:hover{
+    width: 20%;
+}
+
+.second-page .popular-box .center{
+    width: 30%;
+    height: fit-content;
+}
+
 
 .third-page{
     display: flex;

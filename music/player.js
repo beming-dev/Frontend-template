@@ -1,3 +1,5 @@
+import colorThief from './colorthief.js'
+
 let player = document.querySelector('.player');
 let btnPrev = document.querySelector('.fa-chevron-left');
 let btnNext = document.querySelector('.fa-chevron-right');
@@ -11,6 +13,7 @@ let currentMusic = 0;
 
 loadJSON((json) => {
     musicInfo = json;
+    setMusic();
 })
 
 function setMusic(){
@@ -19,6 +22,7 @@ function setMusic(){
         playerBackground.style = `background-image: url(./src/images/${music.albumImg})`;
         profile.src = `./src/images/${music.singerName}.jpg`
         singerIntro.innerHTML = music.intro;
+        colorThief();
     }
 }
 

@@ -136,18 +136,19 @@ li{
 
 .second-page .popular-box{
     width: 100vw;
+    max-width: 1400px;
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     overflow-x: hidden;
-    padding: 10px;
     transition-duration: 1s;
 }
 
 .second-page .popular-box img{
     width: 15%;
+    padding: 1%;
     height: fit-content;
-    margin: 0 1.25%;
     transition-duration: 0.5s;
 }
 

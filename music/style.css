@@ -1,199 +1,200 @@
-html{
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
+html {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    margin:0;
-    overflow: hidden;
-}
-
-ul{
-    margin: 0;
-    padding: 0;
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
-li{
-    list-style: none;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.nav-toggle{
-    font-size: 30px;
-    color: white;
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    z-index: 100;
-    transition-duration: 0.5s;
+li {
+  list-style: none;
 }
 
-.nav-toggle:hover{
-    font-size: 35px;
-    color: grey;
-    cursor: grab;
+.nav-toggle {
+  font-size: 30px;
+  color: white;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+  transition-duration: 0.5s;
+}
+
+.nav-toggle:hover {
+  font-size: 35px;
+  color: grey;
+  cursor: grab;
 }
 
 .hidden {
-    display: none !important;
-    overflow-x: hidden;
+  display: none !important;
+  overflow-x: hidden;
 }
-  
+
 .visuallyhidden {
-    opacity: 0;
-    overflow-x: hidden;
+  opacity: 0;
+  overflow-x: hidden;
 }
 
-.navigation{
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 1s;
-    z-index: 10;
+.navigation {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1s;
+  z-index: 10;
 }
 
-.navigation li{
-    color: white;
-    font-size: 18px;
-    margin: 10px 0;
+.navigation li {
+  color: white;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
-.header{
-    width: 100vw;
-    max-width: 100%;
-    height: 150px;
-    background-color: rgba(0, 0, 0, 0.6);
+.header {
+  width: 100vw;
+  max-width: 100%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.player-background{
-    width: 100vw;
-    max-width: 100%;
-    height: 90%;
-    max-height: 700px;
-    background-image: url(./src/images/music1.jpg);
-    background-size: 600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition-duration: 1s;
-    transition-property: background-image;
+.player-background {
+  width: 100vw;
+  max-width: 100%;
+  height: 90%;
+  max-height: 700px;
+  background-image: url(./src/images/music1.jpg);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition-duration: 1s;
+  transition-property: background-image;
 }
 
-.player-foreground{
-    width: 100vw;
-    max-width: 100%;
-    height: 700px;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.player-foreground {
+  width: 100vw;
+  max-width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.player-foreground .player-box{
-    display: flex;
-    flex-direction: row;
+.player-foreground .player-box {
+  display: flex;
+  flex-direction: row;
 }
 
-.player-foreground .player-box .player{
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 0 20px;
+.player-foreground .player-box .player {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 20px;
 }
 
-.player-foreground .player-box i{
-    text-align: center;
-    width: 30px;
-    height: 30px;
-    line-height: 200px;
-    color: white;
-    font-size: 20px;
-    transition-duration: 0.5s;
+.player-foreground .player-box i {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 200px;
+  color: white;
+  font-size: 20px;
+  transition-duration: 0.5s;
 }
 
-.player-foreground .player-box i:hover{
-    font-size: 30px;
+.player-foreground .player-box i:hover {
+  font-size: 30px;
 }
 
-.second-page{
-    overflow-x: hidden;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    background-color: bisque;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.second-page {
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: bisque;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.second-page .popular-box{
-    overflow: hidden;
-    width: 100vw;
-    max-width: 1400px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+.second-page .popular-box {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 1400px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.5s;
 }
 
-.second-page .popular-box img{
-    width: 15%;
-    padding: 1%;
-    height: fit-content;
+.second-page .popular-box img {
+  width: 15%;
+  padding: 1%;
+  height: fit-content;
+  transition-duration: 0.5s;
 }
 
-.second-page .popular-box .popular:hover{
-    transform:scale(1.2)
+.second-page .popular-box .popular:hover {
+  transform: scale(1.2);
 }
 
-.second-page .popular-box .center{
-    width: 30%;
-    height: fit-content;
+.second-page .popular-box .center {
+  width: 30%;
+  height: fit-content;
 }
 
-
-.third-page{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
+.third-page {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.third-page .profile{
-    width: 30%;
-    transition-duration: 1.5s;
-    margin-left: 20px;
-    border-radius: 10px;
-    margin-right: 20px;
+.third-page .profile {
+  width: 30%;
+  transition-duration: 1.5s;
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 
-.third-page .singer-intro{
-    max-width: 600px;
+.third-page .singer-intro {
+  max-width: 600px;
+  color: white;
+  font-size: 16px;
+  transition-duration: 1.5s;
+  margin-right: 10px;
+}
+
+@media (max-width: 600) {
+  .third-page .singer-intro {
+    max-width: 30%;
     color: white;
     font-size: 16px;
     transition-duration: 1.5s;
-    margin-right: 10px;
-}
-
-@media (max-width:600){
-    .third-page .singer-intro{
-        max-width: 30%;
-        color: white;
-        font-size: 16px;
-        transition-duration: 1.5s;
-    }
-    .player-background{
-        background-size: contain;
-    }
+  }
+  .player-background {
+    background-size: contain;
+  }
 }

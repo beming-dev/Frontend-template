@@ -1,13 +1,13 @@
 let items = document.getElementsByClassName("slider-item");
-let use = true;
+let use = false;
 
 [...items].map((item) => {
   item.addEventListener("click", onItemClick);
 });
 
 function onItemClick(e) {
-  if (use) {
-    use = false;
+  if (!use) {
+    use = true;
     let center = document.querySelector(".center");
     let slider = document.querySelector(".slider");
 
@@ -55,6 +55,9 @@ function onItemClick(e) {
     // items = document.getElementsByClassName('slider-item');
 
     setTimeout(() => {
+      [...items].map((item, i) => {
+        item.style.transitionDuration = "0s";
+      });
       switch (diff) {
         case -2:
           slider.firstElementChild.remove();
@@ -71,11 +74,17 @@ function onItemClick(e) {
           slider.lastElementChild.remove();
           break;
       }
+
       [...items].map((item, i) => {
         item.dataset.count = i + 1;
-        item.removeAttribute("style");
+        item.style.transform = `translateX(0px)`;
       });
-      use = true;
+      setTimeout(() => {
+        [...items].map((item, i) => {
+          item.removeAttribute("style");
+        });
+      }, 100);
+      use = false;
     }, 500);
   }
 }
@@ -90,7 +99,6 @@ function newImg(target) {
 
 function moveForward(items, slider, diff) {
   [...items].map((item) => {
-    item.style.transitionDuration = "0.5s";
     item.style.transform = `translateX(${
       ((slider.clientWidth * 17) / 100) * diff
     }px)`;
@@ -98,6 +106,10 @@ function moveForward(items, slider, diff) {
 }
 
 function moveBackward(items, slider, diff) {
+  [...items].map((item, i) => {
+    item.style.transitionDuration = "0s";
+  });
+
   [...items].map((item) => {
     item.style.transform = `translateX(${
       ((slider.clientWidth * -17) / 100) * diff
@@ -105,7 +117,6 @@ function moveBackward(items, slider, diff) {
   });
 
   [...items].map((item) => {
-    item.style.transitionDuration = "0.5s";
-    item.style.transform = `translateX(0px)`;
+    item.removeAttribute("style");
   });
 }

@@ -124,6 +124,7 @@ li{
 }
 
 .second-page{
+    overflow-x: hidden;
     width: 100vw;
     max-width: 100%;
     height: 100vh;
@@ -139,10 +140,9 @@ li{
     max-width: 1400px;
     height: 100vh;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    transition-duration: 1s;
+    transition-duration: 5s;
 }
 
 .second-page .popular-box img{

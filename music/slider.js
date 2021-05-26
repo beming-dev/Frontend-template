@@ -66,7 +66,7 @@ function onItemClick(e){
             item.dataset.count = i+1;
             item.removeAttribute('style');
         });
-    }, 500);
+    }, 10000);
 }
 
 function newImg(target){
@@ -85,13 +85,12 @@ function moveForward(items, slider, diff){
 }
 
 function moveBackward(items, slider, diff){
-    
     [...items].map((item) => {
         item.style.transform = `translateX(${slider.clientWidth * -17 /100 * diff}px)`;
     });
 
     [...items].map((item) => {
-        item.style.transitionDuration = "0.5s";
+        item.style.transitionDuration = "10s";
         item.style.transform = `translateX(0px)`;
     });
 }

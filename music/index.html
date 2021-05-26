@@ -1,53 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-</head>
-<body>
-    <div class="nav-toggle"><i class="fas fa-bars"></i></div> 
+  </head>
+  <body>
+    <div class="nav-toggle"><i class="fas fa-bars"></i></div>
     <nav class="navigation hidden visuallyhidden">
-        <ul>
-            <li>Home</li>
-            <li>artist</li>
-            <li>music</li>
-        </ul>
+      <ul>
+        <li>Home</li>
+        <li>artist</li>
+        <li>music</li>
+      </ul>
     </nav>
-    <header class="header">
-    </header>
+    <header class="header"></header>
     <div class="player-background first-page">
-        <div class="player-foreground">
-            <div class="player-box">
-                <i class="fas fa-chevron-left"></i>
-                <div class="player"></div>
-                <i class="fas fa-chevron-right"></i>
-            </div>
+      <div class="player-foreground">
+        <div class="player-box">
+          <i class="fas fa-chevron-left"></i>
+          <div class="player"></div>
+          <i class="fas fa-chevron-right"></i>
         </div>
+      </div>
     </div>
     <div class="second-page">
-        <div class="popular-box slider">
-            <img src="./src/images/p1.jpg" alt="" class="popular slider-item" data-count="1">
-            <img src="./src/images/p2.jpg" alt="" class="popular slider-item" data-count="2">
-            <img src="./src/images/p3.jpg" alt="" class="center slider-item" data-count="3">
-            <img src="./src/images/p4.jpg" alt="" class="popular slider-item" data-count="4">
-            <img src="./src/images/p5.jpg" alt="" class="popular slider-item" data-count="5">
-        </div>
+      <div class="popular-box slider">
+        <img
+          src="./src/images/p1.jpg"
+          alt=""
+          class="popular slider-item"
+          data-count="1"
+        />
+        <img
+          src="./src/images/p2.jpg"
+          alt=""
+          class="popular slider-item"
+          data-count="2"
+        />
+        <img
+          src="./src/images/p3.jpg"
+          alt=""
+          class="center slider-item"
+          data-count="3"
+        />
+        <img
+          src="./src/images/p4.jpg"
+          alt=""
+          class="popular slider-item"
+          data-count="4"
+        />
+        <img
+          src="./src/images/p5.jpg"
+          alt=""
+          class="popular slider-item"
+          data-count="5"
+        />
+      </div>
     </div>
     <div class="third-page">
-        <img src="./src/images/tom.jpg" alt="" class="profile">
-        <div class="singer-intro">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reprehenderit fuga hic ad molestiae cum aliquam consequuntur? Odit, voluptatem possimus illum quos eius nulla deleniti repellat veritatis autem excepturi officiis!
-        </div>
+      <img src="./src/images/tom.jpg" alt="" class="profile" />
+      <div class="singer-intro">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+        reprehenderit fuga hic ad molestiae cum aliquam consequuntur? Odit,
+        voluptatem possimus illum quos eius nulla deleniti repellat veritatis
+        autem excepturi officiis!
+      </div>
     </div>
     <script src="main.js"></script>
     <script src="fade.js"></script>
     <script src="player.js" type="module"></script>
     <script src="nav.js"></script>
     <script src="slider.js" type="module"></script>
-</body>
+  </body>
 </html>

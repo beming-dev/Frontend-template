@@ -51,8 +51,6 @@ function onItemClick(e) {
         moveBackward(items, slider, diff);
         break;
     }
-    // slider = document.querySelector('.slider');
-    // items = document.getElementsByClassName('slider-item');
 
     setTimeout(() => {
       [...items].map((item, i) => {
@@ -106,17 +104,15 @@ function moveForward(items, slider, diff) {
 }
 
 function moveBackward(items, slider, diff) {
-  [...items].map((item, i) => {
-    item.style.transitionDuration = "0s";
-  });
-
   [...items].map((item) => {
+    item.style.transitionDuration = "0s";
     item.style.transform = `translateX(${
       ((slider.clientWidth * -17) / 100) * diff
     }px)`;
   });
 
   [...items].map((item) => {
-    item.removeAttribute("style");
+    item.style.transitionDuration = "0.5s";
+    item.style.transform = `translateX(${0}px)`;
   });
 }

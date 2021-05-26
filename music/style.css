@@ -137,7 +137,7 @@ li {
 
 .second-page .popular-box {
   overflow: hidden;
-  width: 100vw;
+  width: 200vw;
   max-width: 1400px;
   height: 100vh;
   display: flex;

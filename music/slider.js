@@ -37,7 +37,6 @@ function onItemClick(e){
             break;
         case 2:
             slider.insertBefore(newImg(slider.lastElementChild), slider.firstElementChild);
-            slider = document.querySelector('.slider');
             slider.insertBefore(newImg(slider.children[4]), slider.firstElementChild);
             moveBackward(items, slider, diff);
             break;
@@ -86,6 +85,7 @@ function moveForward(items, slider, diff){
 }
 
 function moveBackward(items, slider, diff){
+    
     [...items].map((item) => {
         item.style.transform = `translateX(${slider.clientWidth * -17 /100 * diff}px)`;
     });

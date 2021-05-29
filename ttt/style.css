@@ -1,0 +1,12 @@
+.GRL:hover {
+  width: 1000px;
+  height: 1000px;
+  fill: black;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  transition-duration: 1s;
+}

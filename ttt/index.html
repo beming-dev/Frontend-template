@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="world.js"></script>
+  <h2>Datamaps Playground</h2>
+  <p><a href="http://datamaps.github.io/">DataMaps Project Homepage</a></p>
+  <div id="basic" style="position: relative; width: 100%; height: 400px"></div>
+  <link rel="stylesheet" href="style.css" />
+  <div class="box">hello</div>
+
+  <script>
+    //basic map config with custom fills, mercator projection
+    var basic = new Datamap({
+      element: document.getElementById("basic"),
+    });
+  </script>
+  <script src="main.js"></script>
+</body>

@@ -43,7 +43,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    width: calc(100vw - var(--main--default--margin)*2);
     height: 51px;
     margin-left: var(--main--default--margin);
     margin-right: var(--main--default--margin);
@@ -58,7 +58,7 @@ ul{
 
 .main_nav .nav_list{
     display: flex;
-    width: 48%;
+    width: calc(846/1920*100vw);
     justify-content: space-between;
     margin-left: 3%;
 }
@@ -91,17 +91,17 @@ ul{
 }
 
 .content{
-    width: 42%;
-    height: 19%;
+    width: calc(803/1920*100vw);
+    height: calc(362/1080*100vh);
     /* width: 803px; */
     /* height: 362px; */
-    margin-left: 8.75%;
-    margin-top: 12.25%;
+    margin-left: calc(168/1920*100vw);
+    margin-top: calc(214/1080*100vh);
 }
 
 .content .des_01{
     font-family: 'Cabin Condensed', sans-serif;
-    font-size: 1.4vw;
+    font-size: calc(27/1920*100vw);
     /* font-size: 27px; */
     font-weight: 600;
     font-style: normal;
@@ -115,12 +115,40 @@ ul{
 }
 
 .content .des_02{
-    font-size: 4.58vw;
+    margin-bottom: calc(14/1080*100vh);
+    margin-bottom: calc(28/1080*100vh);
+    font-size: calc(88/1920*100vw);
     /* font-size: 88px; */
     font-weight: 700;
     font-style: normal;
     color: white;
     line-height: 124%;
+}
+
+.content .content_buttons{
+    width: calc(445/1920*100vw);
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .content_buttons .content_add{
+    color: white;
+    width: calc(225/1920*100vw);
+    height: calc(69/1080*100vh);
+    font-size: calc(25/1920*100vw);
+    border: 1px solid white;
+    border-radius: calc(69/1080*100vh);
+    background: transparent;
+}
+
+.content .content_buttons .content_listen{
+    color: white;
+    width: calc(194/1920*100vw);
+    height: calc(69/1080*100vh);;
+    font-size: calc(25/1920*100vw);
+    border: 1px solid black;
+    border-radius: calc(69/1080*100vh);
+    background: linear-gradient(to right, #FF5C00, #FFCD00);
 }
 
 .player{

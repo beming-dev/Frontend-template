@@ -116,7 +116,7 @@ button{
 }
 
 .content .des_02{
-    margin-bottom: calc(14/1080*100vh);
+    margin-top: calc(14/1080*100vh);
     margin-bottom: calc(28/1080*100vh);
     font-size: 88px;
     font-weight: 700;
@@ -206,4 +206,41 @@ button{
     justify-content: space-between;
     align-items: center;
     margin-right: var(--main--default--margin);
+}
+
+@media screen(max-width:1200px) {
+    .content{
+        width: 803px;
+        height: 362px;
+    }
+    
+    .content .des_01{
+        font-size: 27px;
+        font-weight: 600;
+    }
+    
+    .content .des_02{
+        margin-top: calc(14/1080*100vh);
+        margin-bottom: calc(28/1080*100vh);
+        font-size: 88px;
+        font-weight: 700;
+        line-height: 124%;
+    }
+    
+    .content .content_buttons{
+        width: 445px;
+    }
+    
+    .content .content_buttons .content_add{
+        width: 225px;
+        height: 69px;
+        font-size: 25px;
+    }
+    
+    .content .content_buttons .content_listen{
+        width: 194px;
+        height: 69px;
+        font-size: 25px;
+    }
+       
 }

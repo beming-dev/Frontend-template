@@ -115,7 +115,7 @@ ul{
 }
 
 .content .des_02{
-    margin-bottom: calc(14/1080*100vh);
+    margin-top: calc(14/1080*100vh);
     margin-bottom: calc(28/1080*100vh);
     font-size: calc(88/1920*100vw);
     /* font-size: 88px; */

@@ -31,7 +31,7 @@ ul {
 
 .main_background {
   width: 100%;
-  height: calc(100vh - 99px);
+  height: calc(100vh);
   background-image: url("images/main_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -91,10 +91,8 @@ ul {
 }
 
 .content {
-  width: calc(803 / 1920 * 100vw);
-  height: calc(362 / 1080 * 100vh);
-  /* width: 803px; */
-  /* height: 362px; */
+  /* width: calc(803 / 1920 * 100vw);
+  height: calc(362 / 1080 * 100vh); */
   margin-left: calc(168 / 1920 * 100vw);
   margin-top: calc(214 / 1080 * 100vh);
 }
@@ -151,6 +149,8 @@ ul {
 }
 
 .player {
+  position: absolute;
+  bottom: 0;
   width: 100vw;
   height: 99px;
   background: black;

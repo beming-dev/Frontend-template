@@ -240,9 +240,29 @@ button{
     align-items: center;
 }
 
-.player .player_play_time .progress_bar{
+.player .player_play_time .my_progress{
     width: 100%;
+    height: 7px;
     margin: 0 10px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.player .player_play_time .my_bar{
+    position: relative;
+    width: 0%;
+    height: 7px;
+    background-color: white;
+}
+
+.player .player_play_time .my_bar::after{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: white;
 }
 
 .player .player_options{

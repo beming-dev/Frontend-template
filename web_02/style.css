@@ -192,8 +192,9 @@ button{
 .player .player_music{
     display: flex;
     flex-shrink: 0;
-    justify-content: space-between;
-    width: 184px;
+    /* justify-content: space-between;
+    width: 184px; */
+    width: 215px;
     height: 61px;
     margin-left: var(--main--default--margin);
 }
@@ -205,9 +206,10 @@ button{
     justify-content: space-evenly;
 }
 
-.player .player_music .music_introduce .music_album{
+.player .player_music .music_album{
     width: 60px;
     height: 60px;
+    margin-right: 10px;
 }
 
 .player .player_music .music_introduce .music_title{

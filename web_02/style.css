@@ -205,6 +205,11 @@ button{
     justify-content: space-evenly;
 }
 
+.player .player_music .music_introduce .music_album{
+    width: 60px;
+    height: 60px;
+}
+
 .player .player_music .music_introduce .music_title{
     font-size: var(--normal--font--size);
     font-weight: 500;

@@ -1,329 +1,332 @@
-:root{
-    --nav--entry--height: 39px;
-    --main--default--margin: 4.1vw;
-    --normal--font--size: 20px;
+:root {
+  --nav--entry--height: 39px;
+  --main--default--margin: 4.1vw;
+  --normal--font--size: 20px;
 }
 
-html{
-    width: 100%;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-ul{
-    margin: 0;
-    padding: 0;
+ul {
+  margin: 0;
+  padding: 0;
 }
-button{
-    border: none;
-    outline: none;
-}
-
-.main_background{
-    width: 100%;
-    height: calc(100vh - 99px);
-    background-image: url("images/main_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center; 
-    z-index: -100;
+button {
+  border: none;
+  outline: none;
 }
 
-.main_nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100vw - var(--main--default--margin)*2);
-    height: 51px;
-    margin-left: var(--main--default--margin);
-    margin-right: var(--main--default--margin);
-    padding-top: 3%;
+.main_background {
+  width: 100%;
+  height: calc(100vh - 99px);
+  background-image: url("images/main_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -100;
 }
 
-.main_nav .nav_logo{
-    color: white;
-    font-size: 35px;
-    font-weight: 700;
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - var(--main--default--margin) * 2);
+  height: 51px;
+  margin-left: var(--main--default--margin);
+  margin-right: var(--main--default--margin);
+  padding-top: 3%;
 }
 
-.main_nav .nav_list{
-    display: flex;
-    max-width: 846px;
-    flex: 1;
-    justify-content: space-between;
-    margin-left: 3%;
+.main_nav .nav_logo {
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
 }
 
-.main_nav .nav_list li{
-    color: white;
-    font-weight: 400;
-    font-size: var(--normal--font--size);
+.main_nav .nav_list {
+  display: flex;
+  max-width: 846px;
+  flex: 1;
+  justify-content: space-between;
+  margin-left: 3%;
 }
 
-.main_nav .nav_list .nav_search_box{
-    display: flex;
+.main_nav .nav_list .current_page {
+  text-decoration: underline;
 }
 
-.main_nav .nav_list .nav_search_box .icon_search{
-    margin-left: 3%;
+.main_nav .nav_list li {
+  color: white;
+  font-weight: 400;
+  font-size: var(--normal--font--size);
 }
 
-.main_nav .nav_list .nav_search_box .search_text{
-    width: 0px;
-    height: 100%;
-    color: white;
-    outline: none;
-    background: transparent;
-    border: none;
-    transition-duration: 1s;
+.main_nav .nav_list .nav_search_box {
+  display: flex;
 }
 
-.main_nav .nav_entry{
-    width: 178px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main_nav .nav_list .nav_search_box .icon_search {
+  margin-left: 3%;
 }
 
-.main_nav .nav_entry a{
-    font-size: var(--normal--font--size);
+.main_nav .nav_list .nav_search_box .search_text {
+  width: 0px;
+  height: 100%;
+  color: white;
+  outline: none;
+  background: transparent;
+  border: none;
+  transition-duration: 1s;
 }
 
-.main_nav .nav_entry .entry_signup{
-    width: 93px;
-    height: var(--nav--entry--height);
-    color: #FFCD00;
-    text-align: center;
-    line-height: var(--nav--entry--height);
-    border: 2px solid #FFCD00;
-    border-radius: 10px;
+.main_nav .nav_entry {
+  width: 178px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.content{
-    margin-left: calc(168/1920*100vw);
-    margin-top: calc(214/1080*100vh);
+.main_nav .nav_entry a {
+  font-size: var(--normal--font--size);
 }
 
-.content .des_01{
-    font-family: 'Cabin Condensed', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    font-style: normal;
-    letter-spacing: 6px;
-    background-image: linear-gradient(to right, #FF8A00, #FFC746);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    
+.main_nav .nav_entry .entry_signup {
+  width: 93px;
+  height: var(--nav--entry--height);
+  color: #ffcd00;
+  text-align: center;
+  line-height: var(--nav--entry--height);
+  border: 2px solid #ffcd00;
+  border-radius: 10px;
 }
 
-.content .des_02{
-    margin-top: calc(14/1080*100vh);
-    margin-bottom: calc(28/1080*100vh);
-    font-size: 80px;
-    font-weight: 700;
-    font-style: normal;
-    color: white;
-    line-height: 124%;
+.content {
+  margin-left: calc(168 / 1920 * 100vw);
+  margin-top: calc(214 / 1080 * 100vh);
 }
 
-.content .content_buttons{
-    width: 400px;
-    display: flex;
-    justify-content: space-between;
+.content .des_01 {
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 6px;
+  background-image: linear-gradient(to right, #ff8a00, #ffc746);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-.content .content_buttons .content_add{
-    color: white;
-    width: 200px;
-    height: 61px;
-    font-size: 22px;
-    border: 1px solid white;
-    border-radius: 61px;
-    background: transparent;
-    transition-duration: 0.5s;
+.content .des_02 {
+  margin-top: calc(14 / 1080 * 100vh);
+  margin-bottom: calc(28 / 1080 * 100vh);
+  font-size: 80px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  line-height: 124%;
 }
 
-.content .content_buttons .content_add:hover{
-    color: #4B1E57;
-    background-color: white;
+.content .content_buttons {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.content .content_buttons .content_listen{
-    color: white;
-    width: 182px;
-    height: 61px;
-    font-size: 22px;
-    border-radius: 61px;
-    background: linear-gradient(to right, #FF5C00, #FFCD00);
-    transition-duration: 0.5s;
+.content .content_buttons .content_add {
+  color: white;
+  width: 200px;
+  height: 61px;
+  font-size: 22px;
+  border: 1px solid white;
+  border-radius: 61px;
+  background: transparent;
+  transition-duration: 0.5s;
 }
 
-.content .content_buttons .content_listen:hover{
-    background: white;
-    color: #FFCD00;
+.content .content_buttons .content_add:hover {
+  color: #4b1e57;
+  background-color: white;
 }
 
-.player{
-    width: 100vw;
-    height: 99px;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+.content .content_buttons .content_listen {
+  color: white;
+  width: 182px;
+  height: 61px;
+  font-size: 22px;
+  border-radius: 61px;
+  background: linear-gradient(to right, #ff5c00, #ffcd00);
+  transition-duration: 0.5s;
 }
 
-.player .player_music{
-    display: flex;
-    flex-shrink: 0;
-    /* justify-content: space-between;
+.content .content_buttons .content_listen:hover {
+  background: white;
+  color: #ffcd00;
+}
+
+.player {
+  width: 100vw;
+  height: 99px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.player .player_music {
+  display: flex;
+  flex-shrink: 0;
+  /* justify-content: space-between;
     width: 184px; */
-    width: 215px;
-    height: 61px;
-    margin-left: var(--main--default--margin);
+  width: 215px;
+  height: 61px;
+  margin-left: var(--main--default--margin);
 }
 
-.player .player_music .music_introduce{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.player .player_music .music_introduce {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.player .player_music .music_album{
-    width: 60px;
-    height: 60px;
-    margin-right: 10px;
+.player .player_music .music_album {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
 }
 
-.player .player_music .music_introduce .music_title{
-    font-size: var(--normal--font--size);
-    font-weight: 500;
-    font-style: normal;
+.player .player_music .music_introduce .music_title {
+  font-size: var(--normal--font--size);
+  font-weight: 500;
+  font-style: normal;
 }
 
-.player .player_music .music_introduce .music_singer{
-    font-size: 12px;
-    font-weight: 300;
-    font-style: normal;
+.player .player_music .music_introduce .music_singer {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.player .player_play{
-    max-width: 566px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.player .player_play {
+  max-width: 566px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
-.player .player_play .player_play_button{
-    width: 566px;
-    /* width: 411px; */
-    height: 32px;
-    display: flex;
-    align-items: center;   
-    justify-content: space-evenly; 
+.player .player_play .player_play_button {
+  width: 566px;
+  /* width: 411px; */
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.player .player_play_time{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.player .player_play_time {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.player .player_play_time .my_progress_touch{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 13px;
-    margin: 0 10px
+.player .player_play_time .my_progress_touch {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 13px;
+  margin: 0 10px;
 }
 
-.player .player_play_time .my_progress{
-    width: 100%;
-    height: 7px;
-    background: rgba(255, 255, 255, 0.4);
+.player .player_play_time .my_progress {
+  width: 100%;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.4);
 }
 
-.player .player_play_time .my_bar{
-    position: relative;
-    width: 0%;
-    height: 7px;
-    background-color: white;
+.player .player_play_time .my_bar {
+  position: relative;
+  width: 0%;
+  height: 7px;
+  background-color: white;
 }
 
-.player .player_play_time .my_bar::after{
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    content: "";
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: white;
+.player .player_play_time .my_bar::after {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: white;
 }
 
-.player .player_options{
-    width: 137px;
-    height: 31px;
-    display: flex;
-    flex-shrink: 0;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: var(--main--default--margin);
+.player .player_options {
+  width: 137px;
+  height: 31px;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: var(--main--default--margin);
 }
 
-.icon{
-    transition-duration: 0.5s;
+.icon {
+  transition-duration: 0.5s;
 }
-.icon:hover{
-    transform: scale(1.2);
+.icon:hover {
+  transform: scale(1.2);
 }
 
-@media (max-width:1200px), (max-height:600px)  {
-    .main_nav .nav_list{
-        transform: scale(0.8);
-    }
-    .main_nav .nav_logo{
-        transform: scale(0.8);
-    }
-    .main_nav .nav_entry{
-        transform: scale(0.8);
-    }
+@media (max-width: 1200px), (max-height: 600px) {
+  .main_nav .nav_list {
+    transform: scale(0.8);
+  }
+  .main_nav .nav_logo {
+    transform: scale(0.8);
+  }
+  .main_nav .nav_entry {
+    transform: scale(0.8);
+  }
 
-    .content{
-        transform: scale(0.8);
-        margin-left: 0;
-    }
+  .content {
+    transform: scale(0.8);
+    margin-left: 0;
+  }
 
-    .player .player_music{
-        transform: scale(0.8);
-    }
-    .player .player_play{
-        transform: scale(0.8);
-    }
+  .player .player_music {
+    transform: scale(0.8);
+  }
+  .player .player_play {
+    transform: scale(0.8);
+  }
 
-    .player .player_play_time{
-        transform: scale(0.8);
-    }
+  .player .player_play_time {
+    transform: scale(0.8);
+  }
 
-    .player .player_options{
-        transform: scale(0.8);
-    }
+  .player .player_options {
+    transform: scale(0.8);
+  }
 }

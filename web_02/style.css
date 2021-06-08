@@ -240,10 +240,17 @@ button{
     align-items: center;
 }
 
+.player .player_play_time .my_progress_touch{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 13px;
+    margin: 0 10px
+}
+
 .player .player_play_time .my_progress{
     width: 100%;
     height: 7px;
-    margin: 0 10px;
     background: rgba(255, 255, 255, 0.4);
 }
 

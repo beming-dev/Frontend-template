@@ -3,36 +3,63 @@ let startBtn = document.querySelector('.music_start');
 let pauseBtn = document.querySelector('.music_pause');
 let leftTime = document.querySelector('.left_time');
 let rightTime = document.querySelector('.right_time');
-let progress = document.querySelector('.my_progress');
+let progress = document.querySelector('.my_progress_touch');
 let bar = document.querySelector('.my_bar');
 
-audio.addEventListener('canplaythrough', () => {
-    let left=parseInt(audio.duration/60);
-    let right=parseInt(audio.duration%60);
+let dragPause = false; //check whether current pause is by drag
 
-    if(parseInt(audio.duration/60)<10){
-        left = `0${parseInt(audio.duration/60)}`
+let shuffleBtn = document.querySelector('.icon_shuffle');
+let loopBtn = document.querySelector('.icon_loop');
+let isShuffle = false;
+let isLoop = false;
+
+shuffleBtn.addEventListener('click', () => {
+    isShuffle = !isShuffle;
+    shuffleBtn.src = 'images/player/shuffle.svg';
+    if(isShuffle){
+        shuffleBtn.src = 'images/player/shuffle-blue.svg';
     }
-    if(parseInt(audio.duration%60) < 10){
-        right = `0${parseInt(audio.duration%60)}`
+});
+
+loopBtn.addEventListener('click', () => {
+    isLoop = !isLoop;
+    loopBtn.src = 'images/player/loop.svg';
+    if(isLoop){
+        loopBtn.src = 'images/player/loop-blue.svg';
     }
-    rightTime.innerHTML = `${left}:${right}`;
+});
+
+function makeAudioTimeText(time){
+    let left=parseInt(time/60);
+    let right=parseInt(time%60);
+
+    if(parseInt(time/60)<10){
+        left = `0${parseInt(time/60)}`
+    }
+    if(parseInt(time%60) < 10){
+        right = `0${parseInt(time%60)}`
+    }
+    return `${left}:${right}`;
+}
+
+function setAudioCurrent(e){
+    let bcr = progress.getBoundingClientRect();
+    let time = (e.clientX - bcr.left) / bcr.width * audio.duration;
+    if(time > audio.duration){
+        time= audio.duration;
+    }
+    audio.currentTime = time;
+}
+
+audio.addEventListener('canplaythrough', () => {
+    rightTime.innerHTML = makeAudioTimeText(audio.duration);
 }, false);
 
 audio.addEventListener('timeupdate', () => {
     let maxWidth = progress.clientWidth;
     bar.style.width = `${maxWidth * audio.currentTime/audio.duration}px`;
 
-    let left=parseInt(audio.currentTime/60);
-    let right=parseInt(audio.currentTime%60);
-
-    if(parseInt(audio.currentTime/60)<10){
-        left = `0${parseInt(audio.currentTime/60)}`
-    }
-    if(parseInt(audio.currentTime%60) < 10){
-        right = `0${parseInt(audio.currentTime%60)}`
-    }
-    leftTime.innerHTML = `${left}:${right}`;
+    leftTime.innerHTML = makeAudioTimeText(audio.currentTime);
 });
 
 audio.addEventListener('ended', () => {
@@ -52,34 +79,26 @@ pauseBtn.addEventListener('click', () => {
     audio.pause();
 });
 
-progress.addEventListener('click', (e) => {
-    let bcr = progress.getBoundingClientRect();
-    let time = (e.clientX - bcr.left) / bcr.width * audio.duration;
-    audio.currentTime = time;
+let drag = false;
+progress.addEventListener('mousedown', () => {
+    drag = true;
 });
 
-progress.addEventListener('drag', (e) => {
-    audio.pause();
-
-    let bcr = progress.getBoundingClientRect();
-
-    let maxWidth = progress.clientWidth;
-    let barWidth  = `${(e.clientX - bcr.left) / bcr.width * maxWidth}px`
-    if((barWidth) >maxWidth){
-        barWidth = maxWidth;
+progress.addEventListener('mousemove', (e) => {
+    if(drag){
+        if(!audio.paused){
+            dragPause = true;
+            audio.pause();
+        }
+        setAudioCurrent(e);
     }
-    bar.style.width = maxWidth;
-
-    let time = (e.clientX - bcr.left) / bcr.width * audio.duration;
-    if(time > audio.duration){
-        time= audio.duration;
-    }
-    audio.currentTime = time;
 });
 
-progress.addEventListener('dragend', (e) => {
-    let bcr = progress.getBoundingClientRect();
-    let time = (e.clientX - bcr.left) / bcr.width * audio.duration;
-    audio.currentTime = time;
-    audio.play();
+progress.addEventListener('mouseup', (e) => {
+    setAudioCurrent(e);
+    drag = false;
+    if(dragPause){
+        audio.play();
+        dragPause = false;
+    }
 });

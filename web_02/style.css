@@ -62,7 +62,8 @@ button{
 
 .main_nav .nav_list{
     display: flex;
-    width: calc(846/1920*100vw);
+    max-width: 846px;
+    flex: 1;
     justify-content: space-between;
     margin-left: 3%;
 }
@@ -71,6 +72,24 @@ button{
     color: white;
     font-weight: 400;
     font-size: var(--normal--font--size);
+}
+
+.main_nav .nav_list .nav_search_box{
+    display: flex;
+}
+
+.main_nav .nav_list .nav_search_box .icon_search{
+    margin-left: 3%;
+}
+
+.main_nav .nav_list .nav_search_box .search_text{
+    width: 0px;
+    height: 100%;
+    color: white;
+    outline: none;
+    background: transparent;
+    border: none;
+    transition-duration: 1s;
 }
 
 .main_nav .nav_entry{
@@ -95,15 +114,13 @@ button{
 }
 
 .content{
-    width: 803px;
-    height: 362px;
     margin-left: calc(168/1920*100vw);
     margin-top: calc(214/1080*100vh);
 }
 
 .content .des_01{
     font-family: 'Cabin Condensed', sans-serif;
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 600;
     font-style: normal;
     letter-spacing: 6px;
@@ -118,7 +135,7 @@ button{
 .content .des_02{
     margin-top: calc(14/1080*100vh);
     margin-bottom: calc(28/1080*100vh);
-    font-size: 88px;
+    font-size: 80px;
     font-weight: 700;
     font-style: normal;
     color: white;
@@ -126,28 +143,40 @@ button{
 }
 
 .content .content_buttons{
-    width: 445px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
 }
 
 .content .content_buttons .content_add{
     color: white;
-    width: 225px;
-    height: 69px;
-    font-size: 25px;
+    width: 200px;
+    height: 61px;
+    font-size: 22px;
     border: 1px solid white;
-    border-radius: 69px;
+    border-radius: 61px;
     background: transparent;
+    transition-duration: 0.5s;
+}
+
+.content .content_buttons .content_add:hover{
+    color: #4B1E57;
+    background-color: white;
 }
 
 .content .content_buttons .content_listen{
     color: white;
-    width: 194px;
-    height: 69px;
-    font-size: 25px;
-    border-radius: 69px;
+    width: 182px;
+    height: 61px;
+    font-size: 22px;
+    border-radius: 61px;
     background: linear-gradient(to right, #FF5C00, #FFCD00);
+    transition-duration: 0.5s;
+}
+
+.content .content_buttons .content_listen:hover{
+    background: white;
+    color: #FFCD00;
 }
 
 .player{
@@ -157,10 +186,12 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 .player .player_music{
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     width: 184px;
     height: 61px;
@@ -187,60 +218,78 @@ button{
 }
 
 .player .player_play{
+    max-width: 566px;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .player .player_play .player_play_button{
-    width: 411px;
+    width: 566px;
+    /* width: 411px; */
     height: 32px;
     display: flex;
     align-items: center;   
-    justify-content: space-between; 
+    justify-content: space-evenly; 
+}
+
+.player .player_play_time{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.player .player_play_time .progress_bar{
+    width: 100%;
+    margin: 0 10px;
 }
 
 .player .player_options{
     width: 137px;
     height: 31px;
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
     margin-right: var(--main--default--margin);
 }
 
-@media screen(max-width:1200px) {
+.icon{
+    transition-duration: 0.5s;
+}
+.icon:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:1200px), (max-height:600px)  {
+    .main_nav .nav_list{
+        transform: scale(0.8);
+    }
+    .main_nav .nav_logo{
+        transform: scale(0.8);
+    }
+    .main_nav .nav_entry{
+        transform: scale(0.8);
+    }
+
     .content{
-        width: 803px;
-        height: 362px;
+        transform: scale(0.8);
+        margin-left: 0;
     }
-    
-    .content .des_01{
-        font-size: 27px;
-        font-weight: 600;
+
+    .player .player_music{
+        transform: scale(0.8);
     }
-    
-    .content .des_02{
-        margin-top: calc(14/1080*100vh);
-        margin-bottom: calc(28/1080*100vh);
-        font-size: 88px;
-        font-weight: 700;
-        line-height: 124%;
+    .player .player_play{
+        transform: scale(0.8);
     }
-    
-    .content .content_buttons{
-        width: 445px;
+
+    .player .player_play_time{
+        transform: scale(0.8);
     }
-    
-    .content .content_buttons .content_add{
-        width: 225px;
-        height: 69px;
-        font-size: 25px;
+
+    .player .player_options{
+        transform: scale(0.8);
     }
-    
-    .content .content_buttons .content_listen{
-        width: 194px;
-        height: 69px;
-        font-size: 25px;
-    }
-       
 }

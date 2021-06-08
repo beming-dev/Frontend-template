@@ -36,7 +36,7 @@ button {
 .main_background {
   width: 100%;
   height: calc(100vh - 99px);
-  background-image: url("images/img.png");
+  background-image: url("images/main_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -328,27 +328,5 @@ button {
 
   .player .player_options {
     transform: scale(0.8);
-  }
-}
-
-@media (max-width: 800px) {
-  .content {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100vh;
-    transform: scale(0.3);
-  }
-
-  .player {
-    display: none;
-  }
-
-  .main_background {
-    height: 100vh;
-  }
-
-  .main_nav .nav_list {
-    display: none;
   }
 }

@@ -300,6 +300,12 @@ button {
   margin-right: var(--main--default--margin);
 }
 
+input[type='range']::-webkit-slider-thumb{
+  outline: none;
+  background-color: white;
+  -webkit-appearance: slider-vertical;
+}
+
 .icon {
   transition-duration: 0.5s;
 }
@@ -326,9 +332,9 @@ button {
     margin-left: 0;
   }
 
-  .player .player_music {
-    transform: scale(var(--first--scale--down));
-    margin-left: 0;
+  /* .player .player_music .music_album{
+    width: 48px;
+    height: 48px;
   }
 
   .player .player_play_button {
@@ -342,7 +348,7 @@ button {
   .player .player_options {
     transform: scale(var(--first--scale--down));
     margin-right: 0;
-  }
+  } */
 }
 
 @media (max-width: 1000px){

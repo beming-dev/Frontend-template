@@ -1,18 +1,20 @@
 let audio = document.querySelector('.player_audio');
-let startBtn = document.querySelector('.music_start');
-let pauseBtn = document.querySelector('.music_pause');
 let leftTime = document.querySelector('.left_time');
 let rightTime = document.querySelector('.right_time');
 let progress = document.querySelector('.my_progress_touch');
 let bar = document.querySelector('.my_bar');
+let startBtn = document.querySelector('.music_start');
+let pauseBtn = document.querySelector('.music_pause');
 let prevBtn = document.querySelector('.icon_prev');
 let nextBtn = document.querySelector('.icon_next');
+let heartBtn = document.querySelector('.icon_heart');
 
 let dragPause = false; //check whether current pause is by drag
 
 let isPlaying = false;
 let isShuffle = false;
 let isLoop = false;
+let isheart = false;
 let shuffleBtn = document.querySelector('.icon_shuffle');
 let loopBtn = document.querySelector('.icon_loop');
 
@@ -25,20 +27,13 @@ loadJSON((json)=>{
     setMusic();
 });
 
-function setMusic(){
-    let currentMusic = musics[currentMusicIdx];
-    let musicAlbum = document.querySelector('.music_album');
-    let musicTitle = document.querySelector('.music_title');
-    let musicSinger = document.querySelector('.music_singer');
-
-    musicAlbum.src = `images/albums/${currentMusic.album}`;
-    musicTitle.innerHTML = currentMusic.title;
-    musicSinger.innerHTML = currentMusic.singer;
-    audio.src = `musics/${currentMusic.audio}`
-
-    bar.style.width = 0;
-    if(isPlaying) audio.play();
-}
+heartBtn.addEventListener('click', () => {
+    isheart = !isheart;
+    heartBtn.src = 'images/player/heart.svg'
+    if(isheart){
+        heartBtn.src = 'images/player/heart_pink.svg'
+    }
+})
 
 shuffleBtn.addEventListener('click', () => {
     isShuffle = !isShuffle;
@@ -55,31 +50,6 @@ loopBtn.addEventListener('click', () => {
         loopBtn.src = 'images/player/loop-blue.svg';
     }
 });
-
-function setIndex(dir){
-    if(isShuffle){
-        let newIdx = Math.floor(Math.random()*3);
-        while(newIdx == currentMusicIdx){
-            newIdx = Math.floor(Math.random()*3);
-        }
-        currentMusicIdx = newIdx;
-    }else{
-        switch(dir){
-            case 'next':
-                currentMusicIdx++;
-                if(currentMusicIdx > musics.length-1){
-                    currentMusicIdx = 0;
-                }
-                break;
-            case 'prev':
-                currentMusicIdx--;
-                if(currentMusicIdx < 0){
-                    currentMusicIdx = musics.length;
-                }
-                break;
-        }
-    }
-}
 
 nextBtn.addEventListener('click', () => {
     setIndex('next');
@@ -157,6 +127,46 @@ function loadJSON(callback) {
       }
     };
     xobj.send(null);  
+}
+
+function setIndex(dir){
+    if(isShuffle){
+        let newIdx = Math.floor(Math.random()*3);
+        while(newIdx == currentMusicIdx){
+            newIdx = Math.floor(Math.random()*3);
+        }
+        currentMusicIdx = newIdx;
+    }else{
+        switch(dir){
+            case 'next':
+                currentMusicIdx++;
+                if(currentMusicIdx > musics.length-1){
+                    currentMusicIdx = 0;
+                }
+                break;
+            case 'prev':
+                currentMusicIdx--;
+                if(currentMusicIdx < 0){
+                    currentMusicIdx = musics.length;
+                }
+                break;
+        }
+    }
+}
+
+function setMusic(){
+    let currentMusic = musics[currentMusicIdx];
+    let musicAlbum = document.querySelector('.music_album');
+    let musicTitle = document.querySelector('.music_title');
+    let musicSinger = document.querySelector('.music_singer');
+
+    musicAlbum.src = `images/albums/${currentMusic.album}`;
+    musicTitle.innerHTML = currentMusic.title;
+    musicSinger.innerHTML = currentMusic.singer;
+    audio.src = `musics/${currentMusic.audio}`
+
+    bar.style.width = 0;
+    if(isPlaying) audio.play();
 }
 
 function makeAudioTimeText(time){

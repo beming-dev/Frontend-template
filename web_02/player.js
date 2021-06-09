@@ -31,7 +31,7 @@ function setMusic(){
     let musicTitle = document.querySelector('.music_title');
     let musicSinger = document.querySelector('.music_singer');
 
-    musicAlbum.src = `images/${currentMusic.album}`;
+    musicAlbum.src = `images/albums/${currentMusic.album}`;
     musicTitle.innerHTML = currentMusic.title;
     musicSinger.innerHTML = currentMusic.singer;
     audio.src = `musics/${currentMusic.audio}`

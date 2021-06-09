@@ -2,6 +2,8 @@
   --nav--entry--height: 39px;
   --main--default--margin: 4.1vw;
   --normal--font--size: 20px;
+  --first--scale--down: 0.8;
+  --second--scale--down: 0.7;
 }
 
 html {
@@ -34,6 +36,8 @@ button {
 }
 
 .main_background {
+    display: flex;
+    flex-direction: column;
   width: 100%;
   height: calc(100vh - 99px);
   background-image: url("images/main_background.jpg");
@@ -62,8 +66,9 @@ button {
 
 .main_nav .nav_list {
   display: flex;
-  max-width: 846px;
-  flex: 1;
+  width: calc(846/1920*100vw);
+  /* max-width: 846px;
+  flex: 1; */
   justify-content: space-between;
   margin-left: 3%;
 }
@@ -189,15 +194,12 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
 }
 
 .player .player_music {
   display: flex;
-  flex-shrink: 0;
-  /* justify-content: space-between;
-    width: 184px; */
-  width: 215px;
+    flex-shrink: 0;
+  max-width: 215px;
   height: 61px;
   margin-left: var(--main--default--margin);
 }
@@ -213,6 +215,7 @@ button {
   width: 60px;
   height: 60px;
   margin-right: 10px;
+  border-radius: 3px;
 }
 
 .player .player_music .music_introduce .music_title {
@@ -232,28 +235,30 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: center;
 }
 
 .player .player_play .player_play_button {
   width: 566px;
-  /* width: 411px; */
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 24px;
+  margin-bottom: 18px;
 }
 
 .player .player_play_time {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 18px;
 }
 
 .player .player_play_time .my_progress_touch {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 566px;
   height: 13px;
   margin: 0 20px;
 }
@@ -262,6 +267,7 @@ button {
   width: 100%;
   height: 7px;
   background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
 }
 
 .player .player_play_time .my_bar {
@@ -300,33 +306,101 @@ button {
 }
 
 @media (max-width: 1200px), (max-height: 600px) {
+    /* control nav list width */
   .main_nav .nav_list {
-    transform: scale(0.8);
+    transform: scale(var(--first--scale--down));
+    flex: 1;
+    max-width: 846px;
   }
   .main_nav .nav_logo {
-    transform: scale(0.8);
+    transform: scale(var(--first--scale--down));
   }
   .main_nav .nav_entry {
-    transform: scale(0.8);
+    transform: scale(var(--first--scale--down));
   }
 
   .content {
-    transform: scale(0.8);
+    transform: scale(var(--first--scale--down));
     margin-left: 0;
   }
 
   .player .player_music {
-    transform: scale(0.8);
+    transform: scale(var(--first--scale--down));
+    margin-left: 0;
   }
-  .player .player_play {
-    transform: scale(0.8);
+
+  .player .player_play_button {
+    transform: scale(var(--first--scale--down));
   }
 
   .player .player_play_time {
-    transform: scale(0.8);
+    transform: scale(var(--first--scale--down));
   }
 
   .player .player_options {
-    transform: scale(0.8);
+    transform: scale(var(--first--scale--down));
+    margin-right: 0;
   }
+}
+
+@media (max-width: 1000px){
+    .player .player_music {
+        transform: scale(var(--second--scale--down));
+      }
+
+      .player .player_play{
+        width: 500px;
+      }
+    
+      .player .player_play_button {
+        transform: scale(var(--second--scale--down));
+      }
+    
+      .player .player_play_time {
+        transform: scale(var(--second--scale--down));
+      }
+    
+      .player .player_options {
+        transform: scale(var(--second--scale--down));
+      }
+}
+
+@media (max-width: 800px){
+    .player{
+        display: none;
+    }
+    .main_background{
+        height: 100vh;
+        background-image: url('images/mobile_background .jpg');
+    }
+    .main_nav .nav_list{
+        display: none;
+    }
+    .content {    
+        margin: auto auto;
+        align-self: center;
+        justify-self: center;
+    }
+      
+    .content .des_01 {
+        font-size: 12px;
+    }
+    
+    .content .des_02 {
+        font-size: 40px;
+    }
+    
+    .content .content_buttons {
+        width: 200px;
+    }
+    
+    .content .content_buttons .content_add {
+        width: 100px;
+        font-size: 11px;
+    }
+    
+    .content .content_buttons .content_listen {
+        width: 91px;
+        font-size: 11px;
+    }
 }

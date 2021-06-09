@@ -56,19 +56,38 @@ loopBtn.addEventListener('click', () => {
     }
 });
 
-nextBtn.addEventListener('click', () => {
-    currentMusicIdx++;
-    if(currentMusicIdx > musics.length-1){
-        currentMusicIdx = 0;
+function setIndex(dir){
+    if(isShuffle){
+        let newIdx = Math.floor(Math.random()*3);
+        while(newIdx == currentMusicIdx){
+            newIdx = Math.floor(Math.random()*3);
+        }
+        currentMusicIdx = newIdx;
+    }else{
+        switch(dir){
+            case 'next':
+                currentMusicIdx++;
+                if(currentMusicIdx > musics.length-1){
+                    currentMusicIdx = 0;
+                }
+                break;
+            case 'prev':
+                currentMusicIdx--;
+                if(currentMusicIdx < 0){
+                    currentMusicIdx = musics.length;
+                }
+                break;
+        }
     }
+}
+
+nextBtn.addEventListener('click', () => {
+    setIndex('next');
     setMusic();
 })
 
 prevBtn.addEventListener('click', () => {
-    currentMusicIdx--;
-    if(currentMusicIdx < 0){
-        currentMusicIdx = musics.length - 1;
-    }
+    setIndex('prev');
     setMusic();
 });
 
@@ -98,20 +117,10 @@ audio.addEventListener('timeupdate', () => {
 });
 
 audio.addEventListener('ended', () => {
-    startBtn.style.display = "inline-block";
-    pauseBtn.style.display = "none";
-
-    //hererererererererererer
-    if(isShuffle){
-        currentMusicIdx = Math.floor(Math.random()*3);
-        setMusic();
-    }else{
-        currentMusicIdx++;
-        if(currentMusicIdx > musics.length-1){
-            currentMusicIdx = 0;
-        }
-        setMusic();
+    if(!isLoop){
+        setIndex('next');
     }
+    setMusic();
 });
 
 let drag = false;

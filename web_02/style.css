@@ -197,8 +197,9 @@ button {
 }
 
 .player .player_music {
+  width: 220px;
   display: flex;
-    flex-shrink: 0;
+  flex-shrink: 0;
   max-width: 215px;
   height: 61px;
   margin-left: var(--main--default--margin);
@@ -290,6 +291,7 @@ button {
 
 .player .player_options {
   width: 137px;
+  margin-right: 83px;
   height: 31px;
   display: flex;
   flex-shrink: 0;
@@ -305,7 +307,7 @@ button {
   transform: scale(1.2);
 }
 
-@media (max-width: 1200px)and(min-width:1000px), (max-height: 600px) {
+@media (min-width:1000px) and (max-width: 1200px), (max-height: 600px) {
     /* control nav list width */
   .main_nav .nav_list {
     transform: scale(var(--first--scale--down));
@@ -365,7 +367,7 @@ button {
       }
 }
 
-@media (max-width: 800px){
+@media (max-width: 850px){
     :root {
         --nav--entry--height: 5vw;
         --logo--font--size: 7vw;

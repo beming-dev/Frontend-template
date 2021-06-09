@@ -330,6 +330,8 @@ input[type='range']::-webkit-slider-thumb{
 }
 
 .side_nav{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 0;
   left: 0;
@@ -340,7 +342,22 @@ input[type='range']::-webkit-slider-thumb{
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+.side_nav .side_nav_list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.side_nav .side_nav_list li{
+  margin: 10px 0;
+}
+
 .side_nav_close{
+  text-align: left;
+  font-size: 50px;
   color: white;
   outline: none;
   border: none;

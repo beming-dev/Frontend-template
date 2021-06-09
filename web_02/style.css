@@ -122,6 +122,10 @@ button {
   border-radius: 10px;
 }
 
+.hamburger{
+  display: none;
+}
+
 .content {
   margin-left: calc(168 / 1920 * 100vw);
   margin-top: calc(214 / 1080 * 100vh);
@@ -223,6 +227,9 @@ button {
   font-size: var(--normal--font--size);
   font-weight: 500;
   font-style: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .player .player_music .music_introduce .music_singer {
@@ -313,7 +320,10 @@ input[type='range']::-webkit-slider-thumb{
   transform: scale(1.2);
 }
 
-@media (min-width:1000px) and (max-width: 1200px), (max-height: 600px) {
+@media (max-width: 1200px), (max-height: 600px) {
+  :root{
+    --shrink--ratio:calc(0.8);
+  }
     /* control nav list width */
   .main_nav .nav_list {
     transform: scale(var(--first--scale--down));
@@ -332,45 +342,86 @@ input[type='range']::-webkit-slider-thumb{
     margin-left: 0;
   }
 
-  /* .player .player_music .music_album{
-    width: 48px;
-    height: 48px;
+  .main_background{
+    height: calc(100vh - calc(99px * var(--shrink--ratio)));
+  }
+  .player {
+    height: calc(99px * var(--shrink--ratio));
+  }
+  
+  .player .player_music {
+    width: calc(220px * var(--shrink--ratio));
+    height: calc(61px * var(--shrink--ratio));
+    max-width: calc(215px * var(--shrink--ratio));
+  }
+  
+  .player .player_music .music_album {
+    width: calc(60px * var(--shrink--ratio));
+    height: calc(60px * var(--shrink--ratio));
+  }
+  
+  .player .player_music .music_introduce .music_title {
+    font-size: calc(var(--normal--font--size) * var(--shrink--ratio));
+  }
+  
+  .player .player_music .music_introduce .music_singer {
+    font-size: calc(12px * var(--shrink--ratio));
+  }
+  
+  .player .player_play {
+    width: calc(566px * var(--shrink--ratio));
+  }
+  
+  .player .player_play .player_play_button {
+    width: calc(566px * var(--shrink--ratio));
+    height: calc(32px * var(--shrink--ratio));
+    margin-top: calc(24px * var(--shrink--ratio));
+    margin-bottom: calc(18px * var(--shrink--ratio));
   }
 
-  .player .player_play_button {
-    transform: scale(var(--first--scale--down));
+  .player .player_play .player_play_button .icon{
+    transform: scale(0.8);
   }
-
+  
   .player .player_play_time {
-    transform: scale(var(--first--scale--down));
+    margin-bottom: calc(18px * var(--shrink--ratio));
   }
 
+  .player .player_play_time .time{
+    font-size: calc(15px * var(--shrink--ratio)); 
+  }
+  
+  .player .player_play_time .my_progress_touch {
+    width: calc(566px * var(--shrink--ratio));
+    height: calc(13px * var(--shrink--ratio));
+    margin: 0 calc(20px * var(--shrink--ratio));
+  }
+  
+  .player .player_play_time .my_progress {
+    height: calc(7px * var(--shrink--ratio));
+    border-radius: 3px;
+  }
+  
+  .player .player_play_time .my_bar {
+    height: calc(7px * var(--shrink--ratio));
+  }
+  
+  .player .player_play_time .my_bar::after {
+    width: calc(11px * var(--shrink--ratio));
+    height: calc(11px * var(--shrink--ratio));
+  }
+  
   .player .player_options {
-    transform: scale(var(--first--scale--down));
-    margin-right: 0;
-  } */
-}
+    width: calc(137px * var(--shrink--ratio));
+    margin-right: calc(83px * var(--shrink--ratio));
+    height: calc(31px * var(--shrink--ratio));
+    margin-right: calc(var(--main--default--margin) * var(--shrink--ratio));
+  }
 
-@media (max-width: 1000px){
-    .player .player_music {
-        transform: scale(var(--second--scale--down));
-      }
-
-      .player .player_play{
-        width: 500px;
-      }
-    
-      .player .player_play_button {
-        transform: scale(var(--second--scale--down));
-      }
-    
-      .player .player_play_time {
-        transform: scale(var(--second--scale--down));
-      }
-    
-      .player .player_options {
-        transform: scale(var(--second--scale--down));
-      }
+  .player .player_options .icon{
+    transform: scale(0.8);
+  }
+  
 }
 
 @media (max-width: 850px){
@@ -414,7 +465,12 @@ input[type='range']::-webkit-slider-thumb{
         width: calc(var(--logo--font--size) * 16/7);
         border-radius: 5px;
     }
-
+    .hamburger{
+      display: inline-block;
+      width: var(--nav--entry--height);
+      height: var(--nav--entry--height);
+      margin-left: 20px;
+    }
 
 
     .content {   

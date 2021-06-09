@@ -376,31 +376,35 @@ button {
     .main_nav .nav_list{
         display: none;
     }
-    .content {    
-        margin: auto auto;
-        align-self: center;
-        justify-self: center;
+    .content {   
+        margin: 0;
+        position: absolute;
+        top: 35%;
+
     }
       
     .content .des_01 {
-        font-size: 12px;
+        font-size: 3.5vw;
     }
     
     .content .des_02 {
-        font-size: 40px;
+        font-size: 11vw;
     }
     
     .content .content_buttons {
-        width: 200px;
+        margin: 0;
+        width: 55vw;
     }
     
     .content .content_buttons .content_add {
-        width: 100px;
-        font-size: 11px;
+        width: 27vw;
+        height: 8vw;
+        font-size: 3vw;
     }
     
     .content .content_buttons .content_listen {
-        width: 91px;
-        font-size: 11px;
+        width: 23vw;
+        height: 8vw;
+        font-size: 3vw;
     }
 }

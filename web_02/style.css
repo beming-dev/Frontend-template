@@ -305,7 +305,7 @@ button {
   transform: scale(1.2);
 }
 
-@media (max-width: 1200px), (max-height: 600px) {
+@media (max-width: 1200px)and(min-width:1000px), (max-height: 600px) {
     /* control nav list width */
   .main_nav .nav_list {
     transform: scale(var(--first--scale--down));
@@ -366,44 +366,80 @@ button {
 }
 
 @media (max-width: 800px){
+    :root {
+        --nav--entry--height: 5vw;
+        --logo--font--size: 7vw;
+    }
     .player{
         display: none;
     }
     .main_background{
         height: 100vh;
-        background-image: url('images/mobile_background .jpg');
+        background-image: url('images/mobile_background.jpg');
     }
     .main_nav .nav_list{
         display: none;
     }
-    .content {   
-        margin: 0;
-        position: absolute;
-        top: 35%;
 
+    .main_nav{
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main_nav .nav_logo{
+        margin-left: 15px;
+        font-size: var(--logo--font--size);
+    }
+    .main_nav .nav_entry{
+        margin-right: 15px;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main_nav .nav_entry .entry_login{
+        font-size: calc(var(--logo--font--size) *4/7);
+        margin-right: 10px;
+    }
+    .main_nav .nav_entry .entry_signup{
+        font-size: calc(var(--logo--font--size) *4/7);
+        width: calc(var(--logo--font--size) * 16/7);
+        border-radius: 5px;
+    }
+
+
+
+    .content {   
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        height: 100%;
+        margin: 0;
     }
       
     .content .des_01 {
-        font-size: 3.5vw;
+        font-size: calc(var(--logo--font--size) * 3/7);
     }
     
     .content .des_02 {
-        font-size: 11vw;
+        font-size: calc(var(--logo--font--size) *88/63);
     }
     
     .content .content_buttons {
         margin: 0;
-        width: 55vw;
+        width: calc(var(--logo--font--size) * 8);
     }
     
     .content .content_buttons .content_add {
-        width: 27vw;
+        width: calc(var(--logo--font--size) * 8 * 194/445);
         height: 8vw;
         font-size: 3vw;
     }
     
     .content .content_buttons .content_listen {
-        width: 23vw;
+        width: calc(var(--logo--font--size) * 8 * 225/445);
         height: 8vw;
         font-size: 3vw;
     }

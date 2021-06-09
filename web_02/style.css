@@ -17,6 +17,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 a {
@@ -318,6 +319,24 @@ input[type='range']::-webkit-slider-thumb{
 }
 .icon:hover {
   transform: scale(1.2);
+}
+
+.side_nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 100%;
+  width: 60%;
+  height: 100%;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.side_nav_close{
+  color: white;
+  outline: none;
+  border: none;
+  background-color: transparent;
 }
 
 @media (max-width: 1200px), (max-height: 600px) {

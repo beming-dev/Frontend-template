@@ -20,3 +20,16 @@ searchBox.addEventListener('mouseout', () => {
     searchBox.style.width = "0";
     searchBox.style.borderBottom = "none";
 });
+
+let navToggler = document.querySelector('.hamburger');
+let sideNavClose = document.querySelector('.side_nav_close');
+
+navToggler.addEventListener('click', () =>{
+    let sideNav = document.querySelector('.side_nav');
+    sideNav.style.marginLeft = "40%";
+});
+
+sideNavClose.addEventListener('click', ()=>{
+    let sideNav = document.querySelector('.side_nav');
+    sideNav.style.marginLeft = "100%";
+})

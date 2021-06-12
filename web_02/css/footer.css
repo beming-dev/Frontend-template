@@ -1,0 +1,83 @@
+.footer {
+  font-family: Roboto;
+  width: 100vw;
+  min-height: 297px;
+  display: flex;
+  justify-content: center;
+  background-color: #1a1a1a;
+}
+
+.footer .footer_grid {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer .footer_grid .logo_box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 58px;
+}
+
+.footer .footer_grid .logo_box .logo {
+  height: 43px;
+  font-family: Helvetica75;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+}
+
+.footer .footer_grid .logo_box .des1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 43px;
+}
+
+.footer .footer_grid .logo_box .des2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.footer .footer_grid .more {
+  display: flex;
+  width: 487px;
+  justify-content: space-between;
+  margin-top: 46px;
+  margin-bottom: 47px;
+}
+
+.footer .footer_grid .more_blog,
+.footer .footer_grid .more_mwm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer .footer_grid .more_blog span,
+.footer .footer_grid .more_mwm span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--font-size2);
+  line-height: 32px;
+}
+
+.footer .footer_grid .more_blog a,
+.footer .footer_grid .more_mwm a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+}

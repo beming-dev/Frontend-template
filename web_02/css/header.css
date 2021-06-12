@@ -1,0 +1,34 @@
+@font-face {
+  font-family: helvetica;
+  src: url("../assets/fonts/Helvetica.ttf");
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #140919;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  outline: none;
+}

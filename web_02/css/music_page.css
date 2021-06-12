@@ -1,0 +1,255 @@
+:root {
+  --responsive-ratio: calc(100vw / 1920);
+  --font-size1: 18px;
+  --font-size2: 20px;
+  --font-size3: 22px;
+  --font-size4: 32px;
+  --font-size5: 70px;
+}
+
+.music_background {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vw * 179 / 96);
+  background-image: url("../assets/images/music_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -100;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1200px;
+}
+
+.grid .main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(198 * var(--responsive-ratio));
+}
+
+.grid .main .title {
+  font-family: "Intel", "sans-sefif";
+  color: white;
+  font-size: var(--font-size2);
+  font-weight: bold;
+  line-height: 134.68%;
+  letter-spacing: 8px;
+}
+
+.grid .main .des {
+  font-size: var(--font-size5);
+  font-weight: 900;
+  background: linear-gradient(to right, #3c1dff, #d73b47);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.grid .main .carousel {
+  width: 1160px;
+  height: 358px;
+  margin-bottom: calc(130 * var(--responsive-ratio));
+}
+
+.grid .songs {
+  font-family: "Inter", "sans-serif";
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: calc(130 * var(--responsive-ratio));
+}
+
+h2 {
+  width: 100%;
+  margin: 0;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--font-size4);
+  line-height: 39px;
+}
+
+.grid .songs .songs_table {
+  display: grid;
+  grid-template-columns: 146px 55px 489px 186px 108px 108px 108px;
+  grid-template-rows: repeat(5, 102px);
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 585px;
+}
+
+.grid .songs .songs_table .tr1 {
+  grid-column: 3/3;
+  justify-self: start;
+}
+.grid .songs .songs_table .tr2 {
+  grid-column: 4/4;
+  justify-self: start;
+}
+.grid .songs .songs_table .tr3 {
+  grid-column: 5/5;
+}
+.grid .songs .songs_table .tr4 {
+  grid-column: 6/6;
+}
+.grid .songs .songs_table .tr5 {
+  grid-column: 7/7;
+}
+
+.grid .songs .songs_table .table_album {
+  width: 62px;
+  height: 62px;
+  border-radius: 3px;
+}
+
+.grid .songs .songs_table .table_play_icon {
+  width: 13px;
+  height: 17px;
+  color: rgba(255, 255, 255, 0.2);
+  margin-right: 42px;
+}
+
+.grid .songs .songs_table .table_music {
+  justify-self: start;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.grid .songs .songs_table .table_music .music_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--font-size3);
+  line-height: 27px;
+}
+
+.grid .songs .songs_table .table_music .music_singer {
+  color: #c1c1c1;
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--font-size1);
+  line-height: 21.78px;
+}
+
+.grid .songs .songs_table .songs_text {
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--font-size1);
+  line-height: 22px;
+}
+
+.grid .songs .songs_table .table_album_type {
+  justify-self: start;
+}
+
+.grid .songs .songs_table .table_time {
+  text-align: center;
+}
+
+.grid .songs .songs_table .table_plays {
+  text-align: center;
+}
+
+.grid .songs .songs_table .table_heart {
+  text-align: center;
+}
+
+.grid .noteworthy_albums {
+  width: 100%;
+}
+
+.grid .noteworthy_albums h2 {
+  color: white;
+  margin-bottom: calc(56 * var(--responsive-ratio));
+}
+
+.grid .noteworthy_albums .album_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid .noteworthy_albums .album_list .album_box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 132px;
+}
+
+.grid .noteworthy_albums .album_list .album_box:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 205, 0, 0.13) 38.41%,
+    #ffcd00 100%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.grid .noteworthy_albums .album_list .album_box .album_image {
+  width: 256px;
+  height: 256px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.grid .noteworthy_albums .album_list .album_box .album_name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--font-size3);
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.grid .noteworthy_albums .album_list .album_box .album_singer {
+  text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--font-size1);
+  line-height: 22px;
+  color: #c1c1c1;
+  margin-bottom: 27px;
+}
+
+.grid .recommended_albums {
+  width: 100%;
+  margin-bottom: 131px;
+}
+
+.grid .recommended_albums h2 {
+  margin-bottom: 56px;
+}
+
+.grid .recommended_albums .album_images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid .recommended_albums .album_images .image_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 267px;
+}
+
+.grid .recommended_albums .album_images .image_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 267px;
+}
+
+.grid .recommended_albums .album_images .image {
+  border-radius: 11px;
+}

@@ -28,25 +28,25 @@ loadJSON((json) => {
 
 heartBtn.addEventListener("click", () => {
   isheart = !isheart;
-  heartBtn.src = "images/player/heart.svg";
+  heartBtn.src = "assets/images/player/heart.svg";
   if (isheart) {
-    heartBtn.src = "images/player/heart_pink.svg";
+    heartBtn.src = "assets/images/player/heart_pink.svg";
   }
 });
 
 shuffleBtn.addEventListener("click", () => {
   isShuffle = !isShuffle;
-  shuffleBtn.src = "images/player/shuffle.svg";
+  shuffleBtn.src = "assets/images/player/shuffle.svg";
   if (isShuffle) {
-    shuffleBtn.src = "images/player/shuffle-blue.svg";
+    shuffleBtn.src = "assets/images/player/shuffle-blue.svg";
   }
 });
 
 loopBtn.addEventListener("click", () => {
   isLoop = !isLoop;
-  loopBtn.src = "images/player/loop.svg";
+  loopBtn.src = "assets/images/player/loop.svg";
   if (isLoop) {
-    loopBtn.src = "images/player/loop-blue.svg";
+    loopBtn.src = "assets/images/player/loop-blue.svg";
   }
 });
 
@@ -163,10 +163,10 @@ function setMusic() {
   let musicTitle = document.querySelector(".music_title");
   let musicSinger = document.querySelector(".music_singer");
 
-  musicAlbum.src = `images/albums/${currentMusic.album}`;
+  musicAlbum.src = `assets/images/albums/${currentMusic.album}`;
   musicTitle.innerHTML = currentMusic.title;
   musicSinger.innerHTML = currentMusic.singer;
-  audio.src = `musics/${currentMusic.audio}`;
+  audio.src = `assets/musics/${currentMusic.audio}`;
 
   bar.style.width = 0;
   if (isPlaying) audio.play();

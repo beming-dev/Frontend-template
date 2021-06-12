@@ -37,8 +37,8 @@
 }
 
 .grid .main .title {
+  color: #b7b7b7;
   font-family: "Intel", "sans-sefif";
-  color: white;
   font-size: var(--font-size2);
   font-weight: bold;
   line-height: 134.68%;

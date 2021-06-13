@@ -1,0 +1,245 @@
+.artist_background {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vw * 179 / 96);
+  background-image: url("../assets/images/artist_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -100;
+}
+
+.grid {
+  width: 1200px;
+}
+
+.grid .main_box {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid .main_content {
+  margin-top: 148px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.grid .main_content .title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 78px;
+  line-height: 125.19%;
+  letter-spacing: 2px;
+}
+
+.grid .main_content .sub_title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 125.19%;
+  background: linear-gradient(to right, #ff4139, #ff5c00);
+  color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 12px;
+}
+
+.grid .main_content .intro {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.grid .main_content .button_box {
+  margin-bottom: 92px;
+}
+
+.grid .main_content .learn_more {
+  width: 165px;
+  height: 49px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 44px;
+  background-color: transparent;
+  color: white;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 17px;
+  text-align: center;
+}
+
+.grid .main_content .follow {
+  width: 133px;
+  height: 49px;
+  background: linear-gradient(360deg, #ff8413 0%, #ff4d34 100%);
+  border-radius: 44px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+  line-height: 24px;
+}
+
+.grid .main_content .track {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 143.52%;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.grid .main_content .track_list {
+  display: flex;
+  flex-direction: row;
+  height: 99px;
+  align-items: center;
+}
+
+.grid .main_content .track_list .track_img {
+  width: 99px;
+  height: 99px;
+  border-radius: 10px;
+}
+
+.grid .main_content .track_list .track_img2 {
+  margin-left: 65px;
+}
+
+.grid .main_content .track_des {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.grid .main_content .track_des .song_title {
+  width: 200px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 5px;
+}
+
+.grid .main_content .track_des .singer {
+  width: 100px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #c1c1c1;
+}
+
+.grid .main_box .main_img {
+  width: 722px;
+  height: 689px;
+  position: relative;
+  left: -133px;
+  top: 15px;
+  z-index: 1;
+}
+
+.grid .ad {
+  margin-top: 119px;
+  margin-bottom: 132px;
+}
+
+.grid .recommended {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid .recommended .recommended_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid .recommended .recommended_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.grid .recommended .recommended_text span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.grid .recommended .recommended_text .music_select {
+  width: 159px;
+  height: 39px;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.08);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 10px;
+}
+
+.grid .recommended .recommended_text .music_select option {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: black;
+}
+
+.grid .recommended .artists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 135px;
+}
+
+.grid .recommended .artists .artist_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 131px;
+  height: 214px;
+}
+
+.grid .recommended .artists .artist_box img {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  margin-bottom: 27px;
+}
+
+.grid .recommended .artists .artist_box span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+}

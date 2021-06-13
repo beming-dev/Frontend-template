@@ -72,7 +72,7 @@ class Carousel {
           // Assign the necessary properties for new gallery item
           Object.assign(newItem,{
             className: 'gallery-item',
-            src: `http://fakeimg.pl/300/?text=${this.carouselArray.length+1}`
+            src: `assets/images/albums/carousel${this.carouselArray.length+1}`
           });
           newItem.setAttribute('data-index', this.carouselArray.length+1);
 

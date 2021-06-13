@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/music_page.css" />
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body>
     <div class="music_background">
@@ -50,18 +51,32 @@
           <span class="title">FEATURED CONTENT</span>
           <span class="des_01 des">Upcoming 2021</span>
           <span class="des_02 des">Music Festivals near you</span>
-          <div class="carousel">
+          <div class="gallery">
+            <div class="gallery-container">
+              <img class="gallery-item gallery-item-1" src="assets/images/albums/carousel1.jpg" data-index="1">
+              <img class="gallery-item gallery-item-2" src="assets/images/albums/carousel2.jpg" data-index="2">
+              <img class="gallery-item gallery-item-3" src="assets/images/albums/carousel3.jpg" data-index="3">
+              <img class="gallery-item gallery-item-4" src="assets/images/albums/carousel4.jpg" data-index="4">
+              <img class="gallery-item gallery-item-5" src="assets/images/albums/carousel5.jpg" data-index="5">
+            </div>
+            <div class="gallery-controls"></div>
+          </div>
+          <!-- <div class="carousel gallery">
             <div class="carousel_top">
               <img src="assets/images/player/previous_button.svg" alt="" class="carousel_prev">
-              <img src="assets/images/albums/left.jpg" alt="" class="image_side">
-              <img src="assets/images/albums/center.jpg" alt="" class="image_center">
-              <img src="assets/images/albums/right.jpg" alt="" class="image_side">
+              <div class="carousel_control gallery-container">
+                <img src="assets/images/albums/carousel1.jpg" alt="" class="image_side gallery-item" data-index="1">
+                <img src="assets/images/albums/carousel2.jpg" alt="" class="image_center gallery-item" data-index="2">
+                <img src="assets/images/albums/carousel3.jpg" alt="" class="image_side gallery-item" data-index="3">
+              </div>
               <img src="assets/images/player/next_button.svg" alt="" class="carousel_next">
             </div>
-            <div class="carousel_bottom">
-
+            <div class="carousel_bottom gallery-controls">
+              <button class="gallery-controls-previous">previous</button>
+              <button class="gallery-controls-add">add</button>
+              <button class="gallery-controls-next">next</button>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="songs">
@@ -197,6 +212,7 @@
         </div>
       </div>
     </div>
+    <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

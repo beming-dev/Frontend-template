@@ -1,5 +1,7 @@
 let searchIcon = document.querySelector('.icon_search');
 let searchBox = document.querySelector('.search_text');
+let navToggler = document.querySelector('.hamburger');
+let sideNavClose = document.querySelector('.side_nav_close');
 
 searchIcon.addEventListener('mouseover', () => {
     searchBox.style.width = "100px";
@@ -20,9 +22,6 @@ searchBox.addEventListener('mouseout', () => {
     searchBox.style.width = "0";
     searchBox.style.borderBottom = "none";
 });
-
-let navToggler = document.querySelector('.hamburger');
-let sideNavClose = document.querySelector('.side_nav_close');
 
 navToggler.addEventListener('click', () =>{
     let sideNav = document.querySelector('.side_nav');

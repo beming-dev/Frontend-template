@@ -1,13 +1,16 @@
 .gallery {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  margin-bottom: 130px;
 }
 
 .gallery-container {
   align-items: center;
   display: flex;
+  width: 100%;
   height: 400px;
   margin: 0 auto;
-  max-width: 1000px;
   position: relative;
 }
 
@@ -18,48 +21,37 @@
   transition: all 0.3s ease-in-out;
   width: 150px;
   z-index: 0;
+  border-radius: 15px;
 }
 
 .gallery-item-1 {
-  left: 15%;
-  opacity: 0.4;
-  transform: translateX(-50%);
+  left: 30%;
+  transform: translateX(-75%);
 }
 
-.gallery-item-2,
-.gallery-item-4 {
-  height: 200px;
+.gallery-item-1,
+.gallery-item-3 {
+  height: 269px;
   opacity: 1;
-  width: 200px;
+  width: 402px;
   z-index: 1;
 }
 
 .gallery-item-2 {
-  left: 30%;
-  transform: translateX(-50%);
-}
-
-.gallery-item-3 {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
     0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
     0 0 100px rgba(255, 255, 255, 0.1);
-  height: 300px;
+  height: 311px;
   opacity: 1;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
+  width: 545px;
   z-index: 2;
 }
 
-.gallery-item-4 {
+.gallery-item-3 {
   left: 70%;
-  transform: translateX(-50%);
-}
-
-.gallery-item-5 {
-  left: 85%;
-  opacity: 0.4;
-  transform: translateX(-50%);
+  transform: translateX(-25%);
 }
 
 .gallery-controls {
@@ -69,6 +61,7 @@
 }
 
 .gallery-controls button {
+  color: white;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -87,22 +80,15 @@
 }
 
 .gallery-controls-previous::before {
-  border: solid #000;
+  border: solid white;
   border-width: 0 2px 2px 0;
   content: "";
   display: inline-block;
   height: 4px;
-  left: -10px;
   padding: 2px;
-  position: absolute;
-  top: 0;
   transform: rotate(135deg) translateY(-50%);
   transition: left 0.15s ease-in-out;
   width: 4px;
-}
-
-.gallery-controls-previous:hover::before {
-  left: -18px;
 }
 
 .gallery-controls-next {
@@ -110,22 +96,15 @@
 }
 
 .gallery-controls-next::before {
-  border: solid #000;
+  border: solid white;
   border-width: 0 2px 2px 0;
   content: "";
   display: inline-block;
   height: 4px;
   padding: 2px;
-  position: absolute;
-  right: -10px;
-  top: 50%;
   transform: rotate(-45deg) translateY(-50%);
   transition: right 0.15s ease-in-out;
   width: 4px;
-}
-
-.gallery-controls-next:hover::before {
-  right: -18px;
 }
 
 .gallery-nav {

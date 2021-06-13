@@ -1,6 +1,6 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'add', 'next'];
+const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 
 class Carousel {
@@ -38,21 +38,23 @@ class Carousel {
   }
 
   // Construct the carousel navigation
-  // setNav() {
-    // galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
+  setNav() {
+    galleryContainer.appendChild(document.createElement('ul')).className = 'gallery-nav';
 
-    // this.carouselArray.forEach(item => {
-    //   const nav = galleryContainer.lastElementChild;
-    //   nav.appendChild(document.createElement('li'));
-    // }); 
-  // }s
+    this.carouselArray.forEach(item => {
+      const nav = galleryContainer.lastElementChild;
+      nav.appendChild(document.createElement('li'));
+    }); 
+  }
 
   // Construct the carousel controls
   setControls() {
-    this.carouselControls.forEach(control => {
-      galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
-
-      document.querySelector(`.gallery-controls-${control}`).innerText = control;
+    this.carouselControls.forEach((control, index) => {
+      if(index == 0){
+        galleryControlsContainer.insertBefore(document.createElement('button'), galleryContainer).className = `gallery-controls-${control}`;
+      }else{
+        galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
+      }
     });
   }
  
@@ -93,5 +95,5 @@ class Carousel {
 const exampleCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
 
 exampleCarousel.setControls();
-// exampleCarousel.setNav();
+exampleCarousel.setNav();
 exampleCarousel.useControls();

@@ -51,9 +51,9 @@ class Carousel {
   setControls() {
     this.carouselControls.forEach((control, index) => {
       if(index == 0){
-        galleryControlsContainer.insertBefore(document.createElement('button'), galleryContainer).className = `gallery-controls-${control}`;
+        galleryControlsContainer.insertBefore(document.createElement('button'), galleryContainer).className = `gallery-controls-item gallery-controls-${control}`;
       }else{
-        galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-${control}`;
+        galleryControlsContainer.appendChild(document.createElement('button')).className = `gallery-controls-item  gallery-controls-${control}`;
       }
     });
   }

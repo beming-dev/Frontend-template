@@ -63,6 +63,14 @@
   margin: 30px 0;
 }
 
+.gallery-controls .gallery-controls-item{
+  transition-duration: 0.5s;
+}
+
+.gallery-controls .gallery-controls-item:hover{
+  transform: scale(1.4);
+}
+
 .gallery-controls button {
   color: white;
   background-color: transparent;

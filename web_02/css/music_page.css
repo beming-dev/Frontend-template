@@ -53,42 +53,6 @@
   -webkit-background-clip: text;
 }
 
-/* .grid .main .carousel {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 358px;
-  margin-bottom: calc(130 * var(--responsive-ratio));
-}
-
-.grid .main .carousel .carousel_top {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 311px;
-}
-
-.grid .main .carousel .carousel_top .carousel_control {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-.grid .main .carousel .carousel_top .image_side {
-  width: 471px;
-  height: 264px;
-  border-radius: 15px;
-}
-
-.grid .main .carousel .carousel_top .image_center {
-  width: 545px;
-  height: 311px;
-  border-radius: 15px;
-} */
-
 .grid .songs {
   font-family: "Inter", "sans-serif";
   width: 100%;

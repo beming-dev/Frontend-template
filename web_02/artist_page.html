@@ -23,32 +23,40 @@
 <body>
     <div class="artist_background">
         <nav class="main_nav">
-            <a href="#" class="nav_logo">MWM</a>
+            <a href="index.html" class="nav_logo">MWM</a>
             <ul class="nav_list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="current_page">Music</a></li>
-                <li><a href="#">Artists</a></li>
-                <li><a href="#">News</a></li>
-                <div class="nav_search_box">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="music_page.html">Music</a></li>
+              <li><a href="artist_page.html" class="current_page">Artists</a></li>
+              <li><a href="news_page.html">News</a></li>
+              <div class="nav_search_box">
                 <input class="search_text" type="text" name="" id="" />
                 <img
-                    class="icon_search icon"
-                    src="assets/images/search.svg"
-                    alt="search"
+                  class="icon_search icon"
+                  src="assets/images/search.svg"
+                  alt="search"
                 />
-                </div>
+              </div>
             </ul>
             <div class="nav_entry">
-                <a class="entry_login" href="">Log in</a>
-                <a class="entry_signup" href="">Sign up</a>
-                <img
+              <a class="entry_login" href="">Log in</a>
+              <a class="entry_signup" href="">Sign up</a>
+              <img
                 class="hamburger"
                 src="assets/images/hamburger.svg"
                 alt="hamburger"
-                />
+              />
             </div>
-        </nav>
-
+          </nav>
+          <div class="side_nav">
+            <button class="side_nav_close">x</button>
+            <ul class="side_nav_list">
+              <li><a href="index.html" class="current_page">Home</a></li>
+              <li><a href="music_page.html">Music</a></li>
+              <li><a href="artist_page.html">Artists</a></li>
+              <li><a href="news_page.html">News</a></li>
+            </ul>
+          </div>
 
         <div class="grid">
             <div class="main_box">
@@ -142,15 +150,6 @@
             </div>
             </div>
         </div>
-        </div>
-        <div class="side_nav">
-        <button class="side_nav_close">x</button>
-        <ul class="side_nav_list">
-            <li><a href="#" class="current_page">Home</a></li>
-            <li><a href="#">Music</a></li>
-            <li><a href="#">Artists</a></li>
-            <li><a href="#">News</a></li>
-        </ul>
         </div>
     </div>
     <script src="js/artist_page.js"></script>

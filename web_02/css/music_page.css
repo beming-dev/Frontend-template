@@ -16,15 +16,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
+  width: var(--grid-width);
 }
 
 .grid .main {
   width: 100%;
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 198px;
+  margin-top: 16.5%;
+  margin-bottom: 10.8%;
 }
 
 .grid .main .title {
@@ -47,9 +49,11 @@
 .grid .songs {
   font-family: "Inter", "sans-serif";
   width: 100%;
+  height: calc(var(--grid-width) * 658/1200);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 130px;
 }
 
@@ -70,7 +74,7 @@ h2 {
   align-items: center;
   justify-items: center;
   width: 100%;
-  height: 585px;
+  height: 88.9%;
 }
 
 .grid .songs .songs_table .tr{
@@ -122,7 +126,7 @@ h2 {
   width: 13px;
   height: 17px;
   color: rgba(255, 255, 255, 0.2);
-  margin-right: 42px;
+  justify-self: start;
 }
 
 .grid .songs .songs_table .table_music {
@@ -178,26 +182,28 @@ h2 {
 
 .grid .noteworthy_albums {
   width: 100%;
-}
-
-.grid .noteworthy_albums h2 {
-  color: white;
-  margin-bottom: 56px;
+  height: calc(var(--grid-width) * 468/1200);
+  margin-bottom: 11%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .grid .noteworthy_albums .album_list {
   width: 100%;
+  height: 77.5%;
+  /* 363px */
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .grid .noteworthy_albums .album_list .album_box {
+  width: 21.25%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  margin-bottom: 132px;
-  width: 21.25%;
-  height: 30.25%;
 }
 
 .grid .noteworthy_albums .album_list .album_box:hover {
@@ -213,7 +219,7 @@ h2 {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 6.9%;
 }
 
 .grid .noteworthy_albums .album_list .album_box .album_image:hover{
@@ -226,7 +232,7 @@ h2 {
   font-size: var(--font-size3);
   line-height: 27px;
   text-align: center;
-  margin-bottom: 7px;
+  margin-bottom: 1.94%;
 }
 
 .grid .noteworthy_albums .album_list .album_box .album_singer {
@@ -236,23 +242,23 @@ h2 {
   font-size: var(--font-size1);
   line-height: 22px;
   color: #c1c1c1;
-  margin-bottom: 27px;
+  margin-bottom: 7.46%;
 }
 
 .grid .recommended_albums {
   width: 100%;
+  height: calc(var(--grid-width) * 683/1200);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 131px;
-}
-
-.grid .recommended_albums h2 {
-  margin-bottom: 56px;
 }
 
 .grid .recommended_albums .album_images {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 588px;
+  height: 86.1%;
 }
 
 .grid .recommended_albums .album_images .image01{

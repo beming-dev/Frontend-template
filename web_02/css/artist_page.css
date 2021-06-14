@@ -13,7 +13,7 @@
 }
 
 .grid {
-  width: var(--grid--width);
+  width: var(--grid-width);
 }
 
 .grid .main_box {
@@ -24,7 +24,7 @@
 
 .grid .main_content {
   width: 655px;
-  height: calc(var(--grid--width) * 542/1200);
+  height: calc(var(--grid-width) * 542/1200);
   margin-top: 148px;
   display: flex;
   flex-direction: column;
@@ -164,7 +164,7 @@
 
 .grid .recommended {
   width: 100%;
-  height: calc(var(--grid--width) * 312/1200);
+  height: calc(var(--grid-width) * 312/1200);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -244,7 +244,7 @@
 
 .grid .best_live{
   width: 100%;
-  height: height: calc(var(--grid--width) * 700/1200);;
+  height: height: calc(var(--grid-width) * 700/1200);;
   margin-bottom: 132px;
 }
 
@@ -339,7 +339,7 @@ margin-left: 5.7%;
 
 .grid .top_rated{
   width: 100%;
-  height: height: calc(var(--grid--width) * 645/1200);;
+  height: height: calc(var(--grid-width) * 645/1200);;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

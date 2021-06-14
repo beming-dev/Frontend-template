@@ -38,7 +38,7 @@
 
 .grid .main .title {
   color: #b7b7b7;
-  font-family: "Intel", "sans-sefif";
+  font-family: "Inter", "sans-sefif";
   font-size: var(--font-size2);
   font-weight: bold;
   line-height: 134.68%;
@@ -193,6 +193,11 @@ h2 {
 
 .grid .songs .songs_table .table_heart {
   text-align: center;
+  transition-duration: 0.5s;
+}
+
+.grid .songs .songs_table .table_heart:hover{
+  transform: scale(1.2);
 }
 
 .grid .noteworthy_albums {
@@ -231,6 +236,10 @@ h2 {
   height: 256px;
   border-radius: 10px;
   margin-bottom: 25px;
+}
+
+.grid .noteworthy_albums .album_list .album_box .album_image:hover{
+  
 }
 
 .grid .noteworthy_albums .album_list .album_box .album_name {

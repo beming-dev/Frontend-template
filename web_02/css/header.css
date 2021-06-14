@@ -8,12 +8,23 @@
   font-style: normal;
 }
 
+:root{
+  --font-size1: 1.8rem;
+  --font-size2: 2.0rem;
+  --font-size3: 2.2rem;
+  --font-size4: 3.2rem;
+  --font-size5: 7.0rem;
+  --font-size6: 7.8rem;
+  --grid--width:1200px;
+}
+
 html {
   width: 100%;
   height: 100%;
   font-family: "Roboto", sans-serif;
   background-color: #140919;
   color: white;
+  font-size: 10px;
 }
 
 body {

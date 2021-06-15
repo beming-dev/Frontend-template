@@ -70,7 +70,7 @@ h2 {
 .grid .songs .songs_table {
   display: grid;
   grid-template-columns: 12% 4.5% 41% 15.5% 9% 9% 9%;
-  grid-template-rows: 73px repeat(5, 102px);
+  grid-template-rows: 12.5% repeat(5, 17.4%);
   align-items: center;
   justify-items: center;
   width: 100%;
@@ -308,4 +308,14 @@ h2 {
 
 .grid .recommended_albums .album_images .image {
   border-radius: 11px;
+}
+
+@media (max-width:1200px){
+  :root{
+    --grid-width: 960px;
+  }
+
+  html{
+    font-size: 8px;
+  }
 }

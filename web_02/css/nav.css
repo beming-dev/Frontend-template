@@ -1,19 +1,15 @@
 :root {
-  --nav--entry--height: 39px;
-  --main--default--margin: 4.1vw;
-  --normal--font--size: 20px;
-  --first--scale--down: 0.8;
-  --second--scale--down: 0.7;
+  --nav-margin: 4.17vw;
+  --nav-font-01:3.5rem;
+  --nav-font-02:2.0rem;
 }
 
 .main_nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100vw - var(--main--default--margin) * 2);
+  width: 100%;
   height: 51px;
-  margin-left: var(--main--default--margin);
-  margin-right: var(--main--default--margin);
   padding-top: 3%;
 }
 
@@ -21,15 +17,14 @@
   font-family: "helvetica", "Arial", sans-serif;
   letter-spacing: 0.01em;
   color: white;
-  font-size: 35px;
+  font-size: var(--nav-font-01);
   font-weight: 700;
+  margin-left: var(--nav-margin);
 }
 
 .main_nav .nav_list {
   display: flex;
   width: calc(846 / 1920 * 100vw);
-  /* max-width: 846px;
-    flex: 1; */
   justify-content: space-between;
   margin-left: 3%;
 }
@@ -41,7 +36,7 @@
 .main_nav .nav_list li {
   color: white;
   font-weight: 400;
-  font-size: var(--normal--font--size);
+  font-size: var(--nav-font-02);
 }
 
 .main_nav .nav_list .nav_search_box {
@@ -67,18 +62,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: var(--nav-margin);
 }
 
 .main_nav .nav_entry a {
-  font-size: var(--normal--font--size);
+  font-size: var(--nav-font-02);
 }
 
 .main_nav .nav_entry .entry_signup {
-  width: 93px;
-  height: var(--nav--entry--height);
+  width: 52.2%;
+  height: 76.5%;
   color: #ffcd00;
   text-align: center;
-  line-height: var(--nav--entry--height);
+  line-height: 39px;
   border: 2px solid #ffcd00;
   border-radius: 10px;
 }
@@ -123,69 +119,28 @@
   background-color: transparent;
 }
 
-@media (max-width: 1200px), (max-height: 600px) {
-  :root {
-    --shrink--ratio: calc(0.8);
+@media (max-width:1200px){
+  html{
+    font-size: 8px;
   }
-  /* control nav list width */
-  .main_nav .nav_list {
-    transform: scale(var(--first--scale--down));
-    flex: 1;
-    max-width: 846px;
-  }
-  .main_nav .nav_logo {
-    transform: scale(var(--first--scale--down));
-  }
+
   .main_nav .nav_entry {
-    transform: scale(var(--first--scale--down));
-  }
+    width: 143px;
+  } 
 }
 
-@media (max-width: 850px) {
-  :root {
-    --nav--entry--height: 5vw;
-    --logo--font--size: 7vw;
-  }
-  .player {
+@media (max-width:768px){
+  .main_nav .nav_list{
     display: none;
-  }
-  .main_background {
-    height: 100vh;
-    background-image: url("../assets/images/mobile_background.jpg");
-  }
-  .main_nav .nav_list {
-    display: none;
-  }
-
-  .main_nav {
-    width: 100vw;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  .main_nav .nav_logo {
-    margin-left: 15px;
-    font-size: var(--logo--font--size);
   }
   .main_nav .nav_entry {
-    margin-right: 15px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .main_nav .nav_entry .entry_login {
-    font-size: calc(var(--logo--font--size) * 4 / 7);
-    margin-right: 10px;
+    width: 178px;
+  } 
+  .main_nav .hamburger{
+    width: 30px;
+    display: inline-block;
   }
   .main_nav .nav_entry .entry_signup {
-    font-size: calc(var(--logo--font--size) * 4 / 7);
-    width: calc(var(--logo--font--size) * 16 / 7);
-    border-radius: 5px;
-  }
-  .hamburger {
-    display: inline-block;
-    width: var(--nav--entry--height);
-    height: var(--nav--entry--height);
-    margin-left: 20px;
+    width: 40%;
   }
 }

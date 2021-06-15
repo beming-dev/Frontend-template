@@ -7,7 +7,7 @@
   background-color: #1a1a1a;
 }
 
-.footer .footer_grid {
+.footer .footer-grid {
   width: var(--grid-width);
   height: 100%;
   display: flex;
@@ -15,13 +15,13 @@
   justify-content: space-between;
 }
 
-.footer .footer_grid .logo_box {
+.footer .footer-grid .logo-box {
   display: flex;
   flex-direction: column;
   margin-top: 58px;
 }
 
-.footer .footer_grid .logo_box .logo {
+.footer .footer-grid .logo-box .logo {
   height: 43px;
   font-family: Helvetica75;
   font-style: normal;
@@ -32,7 +32,7 @@
   text-transform: capitalize;
 }
 
-.footer .footer_grid .logo_box .des1 {
+.footer .footer-grid .logo-box .des1 {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -40,7 +40,7 @@
   margin-bottom: 43px;
 }
 
-.footer .footer_grid .logo_box .des2 {
+.footer .footer-grid .logo-box .des2 {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -49,7 +49,7 @@
   opacity: 0.5;
 }
 
-.footer .footer_grid .more {
+.footer .footer-grid .more {
   display: flex;
   width: 487px;
   justify-content: space-between;
@@ -57,23 +57,23 @@
   margin-bottom: 47px;
 }
 
-.footer .footer_grid .more_blog,
-.footer .footer_grid .more_mwm {
+.footer .footer-grid .more-blog,
+.footer .footer-grid .more-mwm {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.footer .footer_grid .more_blog span,
-.footer .footer_grid .more_mwm span {
+.footer .footer-grid .more-blog span,
+.footer .footer-grid .more-mwm span {
   font-style: normal;
   font-weight: 500;
   font-size: var(--font-size2);
   line-height: 32px;
 }
 
-.footer .footer_grid .more_blog a,
-.footer .footer_grid .more_mwm a {
+.footer .footer-grid .more-blog a,
+.footer .footer-grid .more-mwm a {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;

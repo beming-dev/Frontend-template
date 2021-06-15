@@ -1,5 +1,5 @@
-let btnHeart = document.getElementsByClassName('table_heart');
-let albumBox = document.getElementsByClassName('album_box');
+let btnHeart = document.getElementsByClassName('table-heart');
+let albumBox = document.getElementsByClassName('album-box');
 
 console.log(btnHeart);
 
@@ -20,14 +20,14 @@ let heart_click = [false, false, false, false, false];
 
 [...albumBox].map((item, index) => {
     item.addEventListener('mouseover', () => {
-        let image = document.querySelector(`.album_box0${index+1} .album_image`);
+        let image = document.querySelector(`.album-box0${index+1} .album-image`);
         image.style.opacity = "0.4";
     })
 });
 
 [...albumBox].map((item, index) => {
     item.addEventListener('mouseout', () => {
-        let image = document.querySelector(`.album_box0${index+1} .album_image`);
+        let image = document.querySelector(`.album-box0${index+1} .album-image`);
         image.style.opacity = "1";
     })
 });

@@ -1,4 +1,4 @@
-.artist_background {
+.artist-background {
   color: white;
   display: flex;
   flex-direction: column;
@@ -16,14 +16,14 @@
   width: var(--grid-width);
 }
 
-.grid .main_box {
+.grid .main-box {
   width: 100%;
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
-.grid .main_content {
+.grid .main-content {
   width: 655px;
   margin-top: 148px;
   display: flex;
@@ -31,14 +31,14 @@
   z-index: 2;
 }
 
-.grid .main_content .title {
+.grid .main-content .title {
   font-style: normal;
   font-weight: 900;
   font-size: var(--font-size6);
   letter-spacing: 2px;
 }
 
-.grid .main_content .sub_title {
+.grid .main-content .sub-title {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -49,7 +49,7 @@
   margin-bottom: 2.2%;
 }
 
-.grid .main_content .intro {
+.grid .main-content .intro {
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
@@ -59,13 +59,13 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.grid .main_content .button_box {
+.grid .main-content .button-box {
   width: 100%;
   margin-bottom: 14%;
   height: 9%;
 }
 
-.grid .main_content .learn_more {
+.grid .main-content .learn-more {
   width: 25.2%;
   height: 100%;
   border: 2px solid white;
@@ -82,7 +82,7 @@
   text-align: center;
 }
 
-.grid .main_content .follow {
+.grid .main-content .follow {
   width: 20.3%;
   height: 100%;
   background: linear-gradient(360deg, #ff8413 0%, #ff4d34 100%);
@@ -97,7 +97,7 @@
   line-height: 24px;
 }
 
-.grid .main_content .track {
+.grid .main-content .track {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
@@ -107,30 +107,30 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.grid .main_content .track_list {
+.grid .main-content .track-list {
   display: flex;
   flex-direction: row;
   height: 18.3%;
   align-items: center;
 }
 
-.grid .main_content .track_list .track_img {
+.grid .main-content .track-list .track-img {
   width: auto;
   height: 100%;
   border-radius: 10px;
 }
 
-.grid .main_content .track_list .track_img2 {
+.grid .main-content .track-list .track-img2 {
   margin-left: 65px;
 }
 
-.grid .main_content .track_des {
+.grid .main-content .track-des {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
 
-.grid .main_content .track_des .song_title {
+.grid .main-content .track-des .song-title {
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -139,7 +139,7 @@
   margin-bottom: 5px;
 }
 
-.grid .main_content .track_des .singer {
+.grid .main-content .track-des .singer {
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
@@ -150,7 +150,7 @@
   color: #c1c1c1;
 }
 
-.grid .main_box .main_img {
+.grid .main-box .main-img {
   width: auto;
   height: 100%;
   position: absolute;
@@ -184,7 +184,7 @@
   line-height: 39px;
 }
 
-.grid .recommended .recommended_text {
+.grid .recommended .recommended-text {
   width: 100%;
   height: 12.5%;
   display: flex;
@@ -192,7 +192,7 @@
   margin-bottom: 4.6%;
 }
 
-.grid .recommended .recommended_text .music_select {
+.grid .recommended .recommended-text .music-select {
   width: 13.25%;
   height: 100%;
   outline: none;
@@ -208,7 +208,7 @@
   padding: 0 10px;
 }
 
-.grid .recommended .recommended_text .music_select option {
+.grid .recommended .recommended-text .music-select option {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -223,7 +223,7 @@
   /* 214px */
 }
 
-.grid .recommended .artists .artist_box {
+.grid .recommended .artists .artist-box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -233,14 +233,14 @@
   height: 100%;
 }
 
-.grid .recommended .artists .artist_box .img_artist {
+.grid .recommended .artists .artist-box .img-artist {
   width: 100%;
   height: auto;
   border-radius: 50%;
   margin-bottom: 20.4%;
 }
 
-.grid .recommended .artists .artist_box .cover{
+.grid .recommended .artists .artist-box .cover{
   width: 100%;
   height: 62.8%;
   display: flex;
@@ -255,11 +255,11 @@
   transition-duration: 0.5s;
 }
 
-.grid .recommended .artists .artist_box .cover:hover{
+.grid .recommended .artists .artist-box .cover:hover{
   opacity: 1;
 }
 
-.grid .recommended .artists .artist_box span {
+.grid .recommended .artists .artist-box span {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
@@ -267,13 +267,13 @@
   line-height: 120%;
 }
 
-.grid .best_live{
+.grid .best-live{
   width: 100%;
   height:  calc(var(--grid-width) * 700/1200);
   margin-bottom: 132px;
 }
 
-.grid .best_live .images{
+.grid .best-live .images{
   width: 100%;
   height: 86.4%;
   display: flex;
@@ -282,11 +282,11 @@
   margin-top: 56px;
 }
 
-.grid .best_live .images img{
+.grid .best-live .images img{
   border-radius: 10px;
 }
 
-.grid .best_live .images .img_left{
+.grid .best-live .images .img-left{
   width: 60.75%;
   height: 100%;
   background: rgba(182, 182, 182, 0.1);
@@ -294,13 +294,13 @@
   position: relative;
 }
 
-.grid .best_live .images .img_left .image_01{
+.grid .best-live .images .img-left .image-01{
   width: 100%;
   height: 80.4%;
   margin-bottom: 1.5%;
 }
 
-.grid .best_live .images .img_left .title{
+.grid .best-live .images .img-left .title{
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -309,7 +309,7 @@
   margin-left: 5.7%;
 }
 
-.grid .best_live .images .img_left .info{
+.grid .best-live .images .img-left .info{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -318,7 +318,7 @@
   height: 5.95%;
 }
 
-.grid .best_live .images .img_left .info .left{
+.grid .best-live .images .img-left .info .left{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -326,7 +326,7 @@
   margin-left: 5.49%;;
 }
 
-.grid .best_live .images .img_left .info .right{
+.grid .best-live .images .img-left .info .right{
   width: 10.8%;
   display: flex;
   justify-content: space-between;
@@ -334,11 +334,11 @@
   margin-right: 5.49%;
 }
 
-.grid .best_live .images .img_left .info .profile{
+.grid .best-live .images .img-left .info .profile{
   border-radius: 50%;
 }
 
-.grid .best_live .images .img_left .info span{
+.grid .best-live .images .img-left .info span{
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
@@ -348,7 +348,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.grid .best_live .images .img_left .info .comment_count{
+.grid .best-live .images .img-left .info .comment-count{
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
@@ -356,7 +356,7 @@
   line-height: 120%;
 }
 
-.grid .best_live .images .img_right{
+.grid .best-live .images .img-right{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -364,12 +364,12 @@
   position: relative;
 }
 
-.grid .best_live .images .img_right img{
+.grid .best-live .images .img-right img{
   width: 100%;
   height: auto;
 }
 
-.grid .best_live .images .cover{
+.grid .best-live .images .cover{
   position: absolute;
   top: 0;
   width: 100%;
@@ -387,39 +387,39 @@
   opacity: 0;
 }
 
-.grid .best_live .images .image_02_cover{
+.grid .best-live .images .image-02-cover{
   height: 47.5%;
   font-size: var(--font-size1);
 }
 
-.grid .best_live .images .image_03_cover{
+.grid .best-live .images .image-03-cover{
   top: 52.4%;
   height: 47.5%;
   font-size: var(--font-size1);
 }
 
-.grid .best_live .images .cover:hover{
+.grid .best-live .images .cover:hover{
   opacity: 1;
 }
 
-.grid .best_live .images .cover .watch_box{
+.grid .best-live .images .cover .watch-box{
   display: flex;
   align-items: center;
   margin-top: 4.8%;
   margin-left: 4.8%;
 }
 
-.grid .best_live .images .cover .watch_box .icon_watch{
+.grid .best-live .images .cover .watch-box .icon-watch{
   width: 3.8%;
   margin-right: 5px;
 }
 
-.grid .best_live .images .cover .btn_play{
+.grid .best-live .images .cover .btn-play{
   width: 15.6%;
   align-self: center;
 }
 
-.grid .best_live .images .cover .time{
+.grid .best-live .images .cover .time{
   width: 11.64%;
   height: 5%;
   display: flex;
@@ -431,7 +431,7 @@
   margin-right: 4.8%;
 }
 
-.grid .top_rated{
+.grid .top-rated{
   width: 100%;
   height: height: calc(var(--grid-width) * 645/1200);;
   display: flex;
@@ -440,7 +440,7 @@
   margin-bottom: 132px;
 }
 
-.grid .top_rated .txt_top_rated{
+.grid .top-rated .txt-top-rated{
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
@@ -448,7 +448,7 @@
   line-height: 120%;
 }
 
-.grid .top_rated .cards{
+.grid .top-rated .cards{
   width: 100%;
   height: 85.3%;
   display: flex;
@@ -456,19 +456,19 @@
   margin-top: 4.67%;
 }
 
-.grid .top_rated .cards .card{
+.grid .top-rated .cards .card{
   width: 31.5%;
   height: 100%;
   position: relative;
 }
 
-.grid .top_rated .cards .card img{
+.grid .top-rated .cards .card img{
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-.grid .top_rated .cards .card .card_info{
+.grid .top-rated .cards .card .card-info{
   display: flex;
   flex-direction: column;
   padding: 0 10%;
@@ -477,7 +477,7 @@
   left: 0;
 }
 
-.grid .top_rated .cards .card .card_info .singer{
+.grid .top-rated .cards .card .card-info .singer{
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -486,14 +486,14 @@
   margin-bottom: 10px;
 }
 
-.grid .top_rated .cards .card .card_info .stars{
+.grid .top-rated .cards .card .card-info .stars{
   width: 34.9%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
 }
 
-.grid .top_rated .cards .card .card_info .des{
+.grid .top-rated .cards .card .card-info .des{
   font-family: Roboto;
   font-style: normal;
   font-weight: 200;
@@ -502,19 +502,19 @@
   margin-bottom: 9.5%;
 }
 
-.grid .top_rated .cards .card .card_info .profile{
+.grid .top-rated .cards .card .card-info .profile{
   width: 100%;
   padding: 0 6px;
   display: flex;
   align-items: center;
 }
-.grid .top_rated .cards .card .card_info .profile img{
+.grid .top-rated .cards .card .card-info .profile img{
   width: 11.1%;
   border-radius: 50%;
   margin-right: 15px;
 }
 
-.grid .top_rated .cards .card .card_info .profile span{
+.grid .top-rated .cards .card .card-info .profile span{
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
@@ -529,7 +529,7 @@
   html{
     font-size: 8px;
   }
-  .grid .main_box .main_img {
+  .grid .main-box .main-img {
     right: -16%;
   }
 }

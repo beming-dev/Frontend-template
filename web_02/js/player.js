@@ -1,13 +1,13 @@
-let audio = document.querySelector(".player_audio");
-let leftTime = document.querySelector(".left_time");
-let rightTime = document.querySelector(".right_time");
-let progress = document.querySelector(".my_progress_touch");
-let bar = document.querySelector(".my_bar");
-let startBtn = document.querySelector(".music_start");
-let pauseBtn = document.querySelector(".music_pause");
-let prevBtn = document.querySelector(".icon_prev");
-let nextBtn = document.querySelector(".icon_next");
-let heartBtn = document.querySelector(".icon_heart");
+let audio = document.querySelector(".player-audio");
+let leftTime = document.querySelector(".left-time");
+let rightTime = document.querySelector(".right-time");
+let progress = document.querySelector(".my-progress-touch");
+let bar = document.querySelector(".my-bar");
+let startBtn = document.querySelector(".music-start");
+let pauseBtn = document.querySelector(".music-pause");
+let prevBtn = document.querySelector(".icon-prev");
+let nextBtn = document.querySelector(".icon-next");
+let heartBtn = document.querySelector(".icon-heart");
 
 let dragPause = false; //check whether current pause is by drag
 
@@ -15,8 +15,8 @@ let isPlaying = false;
 let isShuffle = false;
 let isLoop = false;
 let isheart = false;
-let shuffleBtn = document.querySelector(".icon_shuffle");
-let loopBtn = document.querySelector(".icon_loop");
+let shuffleBtn = document.querySelector(".icon-shuffle");
+let loopBtn = document.querySelector(".icon-loop");
 
 let musics;
 let currentMusicIdx = 0;
@@ -38,7 +38,7 @@ shuffleBtn.addEventListener("click", () => {
   isShuffle = !isShuffle;
   shuffleBtn.src = "assets/images/player/shuffle.svg";
   if (isShuffle) {
-    shuffleBtn.src = "assets/images/player/shuffle-blue.svg";
+    shuffleBtn.src = "assets/images/player/shuffle_blue.svg";
   }
 });
 
@@ -46,7 +46,7 @@ loopBtn.addEventListener("click", () => {
   isLoop = !isLoop;
   loopBtn.src = "assets/images/player/loop.svg";
   if (isLoop) {
-    loopBtn.src = "assets/images/player/loop-blue.svg";
+    loopBtn.src = "assets/images/player/loop_blue.svg";
   }
 });
 
@@ -159,9 +159,9 @@ function setIndex(dir) {
 
 function setMusic() {
   let currentMusic = musics[currentMusicIdx];
-  let musicAlbum = document.querySelector(".music_album");
-  let musicTitle = document.querySelector(".music_title");
-  let musicSinger = document.querySelector(".music_singer");
+  let musicAlbum = document.querySelector(".music-album");
+  let musicTitle = document.querySelector(".music-title");
+  let musicSinger = document.querySelector(".music-singer");
 
   musicAlbum.src = `assets/images/albums/${currentMusic.album}`;
   musicTitle.innerHTML = currentMusic.title;

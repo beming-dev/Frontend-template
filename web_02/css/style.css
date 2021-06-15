@@ -1,17 +1,17 @@
 :root {
   --main--default--margin: 4.1vw;
   --player-font-01: 1.2rem;
-  --player-font-02: 2.0rem;
-  --content-font-01 : 2.2rem;
-  --content-font-02 : 2.4rem;
-  --content-font-03 : 8.0rem;
+  --player-font-02: 2rem;
+  --content-font-01: 2.2rem;
+  --content-font-02: 2.4rem;
+  --content-font-03: 8rem;
 }
 
 .main-background {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 99px);
+  height: calc(100vh);
   background-image: url("../assets/images/main_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -103,7 +103,6 @@
   margin-left: var(--main--default--margin);
 }
 
-
 .player .player-music .music-introduce {
   color: white;
   display: flex;
@@ -149,10 +148,10 @@
   justify-content: space-evenly;
 }
 
-.player .player-play .player-play-button img{
+.player .player-play .player-play-button img {
   width: 4%;
 }
-.player .player-play .player-play-button .icon3{
+.player .player-play .player-play-button .icon3 {
   width: 6%;
 }
 
@@ -163,7 +162,7 @@
   align-items: center;
 }
 
-.player .player-play-time .time{
+.player .player-play-time .time {
   font-style: normal;
   font-weight: normal;
   font-size: var(--player-font-01);
@@ -214,11 +213,11 @@
   position: relative;
 }
 
-.player .player-options img{
+.player .player-options img {
   width: 15%;
 }
 
-.player .player-options .sound-slider{
+.player .player-options .sound-slider {
   width: 100px;
   height: 5px;
   position: absolute;
@@ -233,40 +232,39 @@
   transform: scale(1.2);
 }
 
-
 @media (max-width: 1200px), (max-height: 600px) {
-  html{
-    font-size: 8px;  
+  html {
+    font-size: 8px;
   }
 
-  .player .player-music{
+  .player .player-music {
     width: 150px;
   }
 
-  .player .player-play{
+  .player .player-play {
     width: 487.5px;
   }
 
-  .player .player-options{
+  .player .player-options {
     width: 150px;
   }
 }
 
-@media (max-width: 950px){
-  html{
-    font-size: 7px;  
+@media (max-width: 950px) {
+  html {
+    font-size: 7px;
   }
 
-  .player .player-music{
+  .player .player-music {
     width: 120px;
     margin-left: 2vw;
   }
 
-  .player .player-play{
+  .player .player-play {
     width: 390px;
   }
 
-  .player .player-options{
+  .player .player-options {
     width: 120px;
     margin-right: 2vw;
   }
@@ -282,7 +280,7 @@
     background-image: url("../assets/images/mobile_background.jpg");
   }
 
-  .player{
+  .player {
     display: none;
   }
 

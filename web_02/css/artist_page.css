@@ -253,6 +253,7 @@
   z-index: 10;
   opacity: 0;
   transition-duration: 0.5s;
+  border: none;
 }
 
 .grid .recommended .artists .artist-box .cover:hover{
@@ -290,7 +291,7 @@
   width: 60.75%;
   height: 100%;
   background: rgba(182, 182, 182, 0.1);
-  border-radius: 10px;
+  border-radius: 13px;
   position: relative;
 }
 
@@ -487,10 +488,15 @@
 }
 
 .grid .top-rated .cards .card .card-info .stars{
-  width: 34.9%;
+  width: 37%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 14px;
+}
+
+.grid .top-rated .cards .card .card-info .stars img{
+  width: 16px;
+  height: 16px;
 }
 
 .grid .top-rated .cards .card .card-info .des{

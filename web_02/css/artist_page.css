@@ -80,6 +80,12 @@
   line-height: 24px;
   margin-right: 2.5%;
   text-align: center;
+  transition-duration: 0.5s;
+}
+
+.grid .main-content .learn-more:hover{
+  background-color: white;
+  color: black;
 }
 
 .grid .main-content .follow {
@@ -95,6 +101,12 @@
   text-align: center;
   padding: 10px 16px;
   line-height: 24px;
+  transition-duration: 0.5s;
+}
+
+.grid .main-content .follow:hover{
+  background: white;
+  color: #ff8413;
 }
 
 .grid .main-content .track {
@@ -385,18 +397,20 @@
   font-weight: normal;
   font-size: var(--font-size3);
   line-height: 24px;
-  opacity: 0;
+  opacity: 1;
 }
 
 .grid .best-live .images .image-02-cover{
   height: 47.5%;
   font-size: var(--font-size1);
+  opacity: 0;
 }
 
 .grid .best-live .images .image-03-cover{
   top: 52.4%;
   height: 47.5%;
   font-size: var(--font-size1);
+  opacity: 0;
 }
 
 .grid .best-live .images .cover:hover{

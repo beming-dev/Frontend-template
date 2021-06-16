@@ -53,26 +53,10 @@
             </ul>
         </div>
 
-        <div class="enter-box">
-            <div class="sign-in-container container">
-                <div class="sign-in">
-                    <span class="txt-01">Welcome back</span>
-                    <span class="txt-02">Login with your email account</span>
-                    <input type="email" placeholder="email" class="txt-03 input-email">
-                    <input type="password" placeholder="password" class="txt-03 input-pw">
-                    <span class="txt-03">Forgot your password?</span>
-                    <button class="btn-sign-in txt-02">Log in</button>
-                    <span class="txt-03">Or continue with social media</span>
-                    <div class="socials">
-                        <img src="assets/images/google.png" alt="">
-                        <img src="assets/images/facebook.png" alt="">
-                        <img src="assets/images/instagram.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="sign-up-container container">
-                <div class="sign-up">
-                    <span class="txt-01">Create Account</span>
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form action="#" class="sign-up">
+                    <h2 class="txt-01">Create Account</h2>
                     <input type="email" placeholder="email" class="txt-03 input-email">
                     <input type="password" placeholder="password" class="txt-03 input-pw">
                     <input type="password" placeholder="Confirm password" class="txt-03 input-pw">
@@ -81,27 +65,46 @@
                         <span>I agree with TERMS & CONDITIONS</span>
                     </div>
                     <button class="btn-sign-up txt-02">Sign up</button>
-                    <span class="txt-03">Or continue with social media</span>
+                    <p class="txt-03">Or continue with social media</p>
                     <div class="socials">
                         <img src="assets/images/google.png" alt="">
                         <img src="assets/images/facebook.png" alt="">
                         <img src="assets/images/instagram.png" alt="">
                     </div>
-                </div>
+                </form>
             </div>
-            <div class="cover">
-                <div class="cover-right cover-panel">
-                    <span>Welcome Back!</span>
-                    <span>To keep connected with us please login<br/>with your personal infomation </span>
-                    <button>Log in</button>
-                </div>
-                <div class="cover-left cover-panel">
-                    <span>Hello, Friend</span>
-                    <span>Enter your personal details and<br/>discover the best live music  </span>
-                    <button>Sign up now</button>
+            <div class="form-container sign-in-container">
+                <form action="#" class="sign-in">
+                    <h2 class="txt-01">Welcome back</h2>
+                    <h3 class="txt-02">Login with your email account</h3>
+                    <input type="email" placeholder="email" class="txt-03 input-email">
+                    <input type="password" placeholder="password" class="txt-03 input-pw">
+                    <p class="txt-03">Forgot your password?</p>
+                    <button class="btn-sign-in txt-02">Log in</button>
+                    <p class="txt-03">Or continue with social media</p>
+                    <div class="socials">
+                        <img src="assets/images/google.png" alt="">
+                        <img src="assets/images/facebook.png" alt="">
+                        <img src="assets/images/instagram.png" alt="">
+                    </div>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h2 class="txt-01">Welcome Back!</h2>
+                        <p class="txt-02">To keep connected with us please login<br/>with your personal infomation </p>
+                        <button class="to-sign-up txt-02">Log in</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h2 class="txt-01">Hello, Friend</h2>
+                        <p class="txt-02">Enter your personal details and<br/>discover the best live music  </p>
+                        <button class="to-sign-in txt-02">Sign up now</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/login.js"></script>
 </body>
 </html>

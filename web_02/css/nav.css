@@ -84,7 +84,7 @@
 }
 
 .side-nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: 0;
@@ -131,6 +131,9 @@
 }
 
 @media (max-width:768px){
+  .side-nav{
+    display: flex;
+  }
   .main-nav .nav-list{
     display: none;
   }

@@ -1,13 +1,19 @@
-const signUpButton = document.getElementById('signUp');
-const signInButton = document.getElementById('signIn');
-const container = document.getElementById('container');
+let btn = document.getElementById('btn');
 
-signUpButton.addEventListener('click', () => {
-	container.classList.add("right-panel-active");
-    console.log(1);
-});
-
-signInButton.addEventListener('click', () => {
-	container.classList.remove("right-panel-active");
-    console.log(1);
-});
+btn.addEventListener('click', ()=>{
+    btn.style.width = "50px";
+    btn.innerHTML = "";
+    btn.style.borderRadius = "50px";
+    let div = document.createElement('div');
+    div.classList = "circle";
+    setTimeout(() => {
+        btn.appendChild(div);
+    }, 300);
+    
+    setTimeout(() => {
+        div.remove();
+        let div2 = document.createElement('div');
+        div2.classList = 'check';
+        btn.appendChild(div2);
+    }, 1000)
+})

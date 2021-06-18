@@ -67,6 +67,11 @@ h2 {
   line-height: 39px;
 }
 
+.grid .songs .clicked{
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+}
+
 .grid .songs .songs-table {
   display: grid;
   grid-template-columns: 12% 4.5% 41% 15.5% 9% 9% 9%;
@@ -127,6 +132,11 @@ h2 {
   height: 17px;
   color: rgba(255, 255, 255, 0.2);
   justify-self: start;
+  transition-duration: 0.5s;
+}
+
+.grid .songs .songs-table .table-play-icon:hover{
+  transform: scale(1.4);
 }
 
 .grid .songs .songs-table .table-music {
@@ -295,6 +305,49 @@ h2 {
   line-height: 61px;
 }
 
+.grid .recommended-albums .album-images .cover-small{
+  width: 100%;
+  height: 46.94%;
+  background: linear-gradient(180deg, rgba(255, 205, 0, 0.13) 38.41%, #FFCD00 100%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 11px;
+}
+
+.grid .recommended-albums .album-images .cover-01,
+.grid .recommended-albums .album-images .cover-03{
+  top: 0;
+}
+
+.grid .recommended-albums .album-images .cover-02,
+.grid .recommended-albums .album-images .cover-04{
+  bottom: 0;
+}
+
+.grid .recommended-albums .album-images .cover-small:hover{
+  opacity: 1;
+}
+
+.grid .recommended-albums .album-images .cover-small div:nth-child(1){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 120%;
+}
+
+.grid .recommended-albums .album-images .cover-small div:nth-child(2){
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 120%;
+}
+
 .grid .recommended-albums .album-images .image01{
   width: 49%;
 }
@@ -304,6 +357,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   width: 22.25%;
+  position: relative;
 }
 
 .grid .recommended-albums .album-images .image {

@@ -74,6 +74,7 @@
         </div>
 
         <div class="songs">
+          <audio src="" id="audio-songs"></audio>
           <h2>Latest Songs Releases</h2>
           <div class="songs-table">
             <!-- 1 -->
@@ -87,7 +88,7 @@
               
             <!-- 2 -->
               <img src="assets/images/albums/SearchingForNirvana.jpg" alt="" class="table-album"/>
-              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" />
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="SearchingForNirvana"/>
               <div class="table-music">
                 <span class="music-title">Searching for nirvana</span>
                 <span class="music-singer">Royal & the Serpent</span>
@@ -98,7 +99,7 @@
               <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
             <!-- 3 -->
               <img src="assets/images/albums/LostCause.jpg" alt="" class="table-album"/>
-              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" />
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="LostCause"/>
               <div class="table-music">
                 <span class="music-title">Lost Cause</span>
                 <span class="music-singer">Billie Eilish</span>
@@ -109,7 +110,7 @@
               <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
             <!-- 4 -->
               <img src="assets/images/albums/BestIsYetToCome.jpg" alt="" class="table-album"/>
-              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" />
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="BestIsYetToCome"/>
               <div class="table-music">
                 <span class="music-title">Best Is Yet To Come</span>
                 <span class="music-singer">Gryffin, Kyle Reynolds</span>
@@ -120,7 +121,7 @@
               <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
             <!-- 5 -->
               <img src="assets/images/albums/Baptize.jpg" alt="" class="table-album"/>
-              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" />
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="Baptize"/>
               <div class="table-music">
                 <span class="music-title">Baptize</span>
                 <span class="music-singer">Atreyu</span>
@@ -131,7 +132,7 @@
               <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
             <!-- 6 -->
               <img src="assets/images/albums/BlueWeekend.jpg" alt="" class="table-album"/>
-              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" />
+              <img src="assets/images/player/play.svg" alt="" class="table-play-icon" data-music="BlueWeekend"/>
               <div class="table-music">
                 <span class="music-title">Blue Weekend</span>
                 <span class="music-singer">Wolf Alice</span>
@@ -141,6 +142,7 @@
               <span class="table-plays songs-text">8k</span>
               <img src="assets/images/player/heart.svg" alt="" class="table-heart" />
           </div>
+          
         </div>
 
         <div class="noteworthy-albums">
@@ -178,11 +180,27 @@
             </div>
             <div class="image-side">
               <img src="assets/images/albums/RAlbum2.jpg" alt="" class="image image02">
+              <div class="cover-small cover-01">
+                <div>THE TOP 10</div>
+                <div>GLOVAL</div>
+              </div>
               <img src="assets/images/albums/RAlbum3.jpg" alt="" class="image image03">
+              <div class="cover-small cover-02">
+                <div>THE TOP 10</div>
+                <div>GLOVAL</div>
+              </div>
             </div>
             <div class="image-side">
               <img src="assets/images/albums/RAlbum4.jpg" alt="" class="image image04">
+              <div class="cover-small cover-03">
+                <div>THE TOP 10</div>
+                <div>GLOVAL</div>
+              </div>
               <img src="assets/images/albums/RAlbum5.jpg" alt="" class="image image05">
+              <div class="cover-small cover-04">
+                <div>THE TOP 10</div>
+                <div>GLOVAL</div>
+              </div>
             </div>
           </div>
         </div>
@@ -214,6 +232,7 @@
     </div>
     <script src="js/carousel.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/small_player.js"></script>
     <script src="js/music_page.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-let audio = document.querySelector(".player-audio");
+ let audio = document.querySelector(".player-audio");
 let leftTime = document.querySelector(".left-time");
 let rightTime = document.querySelector(".right-time");
 let progress = document.querySelector(".my-progress-touch");

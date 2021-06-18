@@ -1,0 +1,229 @@
+:root{
+    --grid-width:1200px;
+}
+
+.news-background{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh);
+    background-image: url("../assets/images/artist_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -100;
+    align-items: center;
+    font-family: Inter;
+}
+
+.grid{
+    width: var(--grid-width);
+}
+
+.hot-news-back{
+    width: 100%;
+    height: calc(var(--grid-width) * 725 / 1200);
+    position: relative;
+    margin-top: 5.67%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11%;
+}
+
+.hot-news-back::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/hotNewsBack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hot-news{
+    width: 53.67%;
+    margin-top: 8.67%;
+    margin-left: 8.42%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.hot-news .txt-hot-news{
+    width: fit-content;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 134.52%;
+    color: red;
+    border: 1px solid red;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+}
+
+.hot-news .title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 3.42%;
+}
+
+.hot-news .author{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4.66%;
+}
+
+.hot-news .info{
+    width: 59.8%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 8px 12px;
+}
+
+.hot-news .info .border{
+    height: 25px;
+    border-right: 1px solid white;
+    margin-right: 19px;
+}
+
+.hot-news .info span{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 18px;
+}
+
+.hot-news .info img{
+    margin-right: 11px;
+}
+
+.trend{
+    width: 22.92%;
+    height: 71.31%;
+    margin-top: 8.67%;
+    margin-right: 8.42%;
+    z-index: 10;
+    position: relative;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.trend .trending{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.trend .txt-trending{
+    width: 50%;
+    height: 49px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.trend .popular{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 49px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.trend .txt-popular{
+    width: 50%;
+    height: 49px;
+    align-self: flex-end;
+    line-height: 49px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+
+.trend .trend-container{
+    width: 84.4%;
+    height: 22.825%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trend .trend-container img{
+    width: 31%;
+    height: 59%;
+}
+
+.trend .trend-container .info{
+    width: 61.64%;
+    height: 46.15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.trend .trend-container .info .title{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.trend .trend-container .info .video-info{
+    display: flex;
+    flex-direction: row;
+    height: 12px;
+    align-items: center;
+}
+
+.trend .trend-container .info .video-info img{
+    width: 12px;
+    height: 100%;
+    margin-right: 4px;
+}
+
+.trend .trend-container .info .video-info span{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 1.0rem;
+    margin-right: 13px;
+}

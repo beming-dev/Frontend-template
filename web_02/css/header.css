@@ -8,14 +8,14 @@
   font-style: normal;
 }
 
-:root{
+:root {
   --font-size1: 1.8rem;
-  --font-size2: 2.0rem;
+  --font-size2: 2rem;
   --font-size3: 2.2rem;
   --font-size4: 3.2rem;
-  --font-size5: 7.0rem;
+  --font-size5: 7rem;
   --font-size6: 7.8rem;
-  --grid-width:1200px;
+  --grid-width: 1200px;
 }
 
 html {
@@ -32,6 +32,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Inter;
 }
 
 body {

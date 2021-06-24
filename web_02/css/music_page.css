@@ -21,7 +21,7 @@
 
 .grid .main {
   width: 100%;
-  height: 650px;
+  height: calc(var(--grid-width) * 650 /1200);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -469,5 +469,15 @@ h2 {
 
   html{
     font-size: 8px;
+  }
+}
+
+@media (max-width:960px){
+  :root{
+    --grid-width: 768px;
+  }
+
+  html{
+    font-size: 6px;
   }
 }

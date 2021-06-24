@@ -133,7 +133,7 @@
 }
 
 .grid .main-content .track-list .track-img2 {
-  margin-left: 65px;
+  margin-left: 60px;
 }
 
 .grid .main-content .track-des {
@@ -551,5 +551,15 @@
   }
   .grid .main-box .main-img {
     right: -16%;
+  }
+}
+
+@media (max-width:960px){
+  :root{
+    --grid-width: 768px;
+  }
+
+  html{
+    font-size: 6px;
   }
 }

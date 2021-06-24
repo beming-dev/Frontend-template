@@ -70,15 +70,15 @@
 .hot-news .title {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
   margin-bottom: 3.42%;
 }
 
 .hot-news .author {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2.0rem;
   line-height: 120%;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 4.66%;
@@ -98,14 +98,14 @@
 .hot-news .info .border {
   height: 25px;
   border-right: 1px solid white;
-  margin-right: 19px;
+  margin-right: 1.9rem;
 }
 
 .hot-news .info span {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 19px;
-  margin-right: 18px;
+  margin-right: 1.8rem;
 }
 
 .hot-news .info img {
@@ -223,7 +223,7 @@
 .trend .trend-container .info .video-info span {
   font-style: normal;
   font-weight: 300;
-  font-size: 10px;
+  font-size: 1.0rem;
   line-height: 1rem;
   margin-right: 13px;
 }
@@ -246,7 +246,7 @@ h2 {
 
 .sub-title {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 142.52%;
   margin-bottom: 4.67%;
 }
@@ -318,7 +318,7 @@ p {
 .billboard-container .top .left .text-area .icons span {
   padding: 6px 10px;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 1.0rem;
   background: #83558e;
   border-radius: 14px;
   text-align: center;
@@ -333,7 +333,7 @@ p {
 .billboard-container .icons span {
   padding: 6px 10px;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 1.0rem;
   background: #83558e;
   border-radius: 14px;
   text-align: center;
@@ -341,13 +341,13 @@ p {
 
 .billboard-container .text-01 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 142.52%;
 }
 
 .billboard-container .text-02 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 160.52%;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -375,13 +375,13 @@ p {
 
 .billboard-container .profile img:nth-child(1) {
   width: 30px;
-  margin-right: 9px;
+  margin-right: 0.9rem;
 }
 
 .billboard-container .profile img:nth-child(3) {
   width: 17px;
   height: 17px;
-  margin-right: 9px;
+  margin-right: 0.9rem;
 }
 
 .billboard-container .top .right {
@@ -427,7 +427,7 @@ p {
 .billboard-container .top .right .container .icons span {
   padding: 6px 10px;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 1.0rem;
   background: #83558e;
   border-radius: 14px;
   text-align: center;
@@ -461,6 +461,10 @@ p {
   position: relative;
 }
 
+.billboard-container .bottom .item-02 .image{
+  width: 100%;
+}
+
 .billboard-container .bottom .item-02 .icons {
   position: absolute;
   top: 29px;
@@ -490,6 +494,7 @@ p {
 
 .latest-news .content {
   width: 100%;
+  height: 82.3%;
   margin: 0;
   flex-grow: 1;
   display: flex;
@@ -535,19 +540,19 @@ p {
 
 .latest-news .text-01 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 140.02%;
 }
 
 .latest-news .text-02 {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 17px;
 }
 
 .latest-news .text-03 {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 153.52%;
 }
 
@@ -591,14 +596,14 @@ p {
 
 .subscribe .text-01 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 3.6rem;
   line-height: 131.52%;
   margin-bottom: 5px;
 }
 
 .subscribe .text-02 {
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 131.52%;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -634,7 +639,7 @@ p {
   border: none;
   margin-right: 50px;
   border-radius: 29.5px;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 22px;
   color: white;
   background: rgba(255, 255, 255, 0.1);
@@ -647,4 +652,29 @@ p {
   position: absolute;
   right: 0;
   top: 27%;
+}
+
+
+
+@media (max-width:1200px){
+  :root{
+    --grid-width:960px;
+  }
+  html{
+    font-size: 8px;
+  }
+
+  .hot-news .info {
+    width: 64%;
+  }
+}
+
+@media (max-width:960px){
+  :root{
+    --grid-width: 768px;
+  }
+
+  html{
+    font-size: 6px !important;
+  }
 }

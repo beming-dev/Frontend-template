@@ -14,6 +14,7 @@
   z-index: -100;
   align-items: center;
   font-family: Inter;
+  position: relative;
 }
 
 .grid {
@@ -654,6 +655,149 @@ p {
   top: 27%;
 }
 
+.loading{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-attachment: local;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-container{
+  width: 681px;
+  height: 477px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset -3px -3px 15px rgba(255, 255, 255, 0.25);
+  z-index: 10002;
+  margin: 0;
+}
+
+.subscribe-container .letter{
+  position: absolute;
+  top: -47px;
+  left: calc(50% - 47px);
+  width: 94px;
+  height: 94px;
+}
+
+.subscribe-container .exit{
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 27px;
+  height: 27px;
+}
+
+.subscribe-container span:nth-child(3){
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.subscribe-container span:nth-child(4){
+  font-size: 22px;
+  line-height: 141.02%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  opacity: 0.8;
+}
+
+.subscribe-container input{
+  outline: none;
+  border: none;
+}
+
+.subscribe-container input[type=email]{
+  width: 61%;
+  height: 11.8%;
+  padding: 0 3%;
+  background: rgba(196, 196, 196, 0.1);
+  border-radius: 64px;
+  color: white;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+.subscribe-container button{
+  width: 67%;
+  height: 11.8%;
+  background: linear-gradient(90deg, #FF5033 0%, #FF8016 100%);
+  border-radius: 53px;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  transition-duration: 0.3s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 30px 30px 0 0;
+  border-top: 2px solid white;
+  animation: rotate_image 0.6s linear infinite;
+} 
+
+@keyframes rotate_image{
+100% {
+    transform: rotate(360deg);
+  }
+}
+
+.check {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  border: solid 3px white;
+  width: 22px;
+  height: 11px;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  transform-origin: top left;
+}
+
+.check {
+  animation: start 0.5s ease both;
+  /* Override default play state paused of codepen iframe */
+  animation-play-state: running!important;
+}
+
+@keyframes start {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  50% {
+    opacity: 1;
+    width: 0;
+    height: 11px;
+  }
+  100% {
+    width: 22px;
+  }
+}
 
 
 @media (max-width:1200px){

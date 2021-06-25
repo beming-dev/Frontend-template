@@ -275,6 +275,14 @@
     --logo--font--size: 7vw;
   }
 
+  html {
+    font-size: 6px !important;
+  }
+
+  .main-nav{
+    height: auto !important;
+  }
+
   .main-background {
     height: 100vh;
     background-image: url("../assets/images/mobile_background.jpg");
@@ -289,7 +297,6 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    height: 100%;
     margin: 0;
     position: absolute;
     top: 20%;

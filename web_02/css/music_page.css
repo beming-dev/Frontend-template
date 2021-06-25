@@ -550,12 +550,20 @@ h2 {
   }
 
   .noteworthy-albums .album-list{
-    width: 560px !important;
-    overflow-x: scroll;
+    justify-content: unset !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
   .noteworthy-albums .album-box{
+    flex: 0 0 auto;
     width: 130px !important;
     height: 176px !important;
+    margin-right: 10px;
+  }
+
+  .noteworthy-albums .album-box .album-image{
+    width: 130px;
+    height: 130px;
   }
 
   .recommended-albums{

@@ -504,8 +504,8 @@ h2 {
   }
 
   .main{
-    height: auto;
-    margin-bottom: 20% !important;
+    height: auto !important;
+    margin-bottom: 30% !important;
   }
 
   .grid .songs .songs-table .table-album-type,
@@ -529,6 +529,7 @@ h2 {
 
   .grid .songs{
     height: 347px;
+    margin-bottom: 20%;
   }
 
   .grid .songs .songs-table {
@@ -547,6 +548,7 @@ h2 {
 
   .noteworthy-albums{
     height: 235px !important;
+    margin-bottom: 20% !important;
   }
 
   .noteworthy-albums .album-list{
@@ -568,7 +570,7 @@ h2 {
 
   .recommended-albums{
     height: 750px !important;
-    margin-bottom: 11%;
+    margin-bottom: 21%;
   }
 
   .recommended-albums .album-images{

@@ -571,8 +571,8 @@ h2 {
   }
 
   .noteworthy-albums .album-box .album-image{
-    width: 130px;
-    height: 130px;
+    width: 130px !important;
+    height: 130px !important;
   }
 
   .recommended-albums{

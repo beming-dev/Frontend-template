@@ -54,7 +54,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 130px;
+  margin-bottom: 10.8%;
 }
 
 h2 {
@@ -338,7 +338,7 @@ h2 {
   font-style: normal;
   font-weight: bold;
   font-size: var(--font-size3);
-  line-height: 27px;
+  line-height: 120%;
   text-align: center;
   margin-bottom: 1.94%;
 }
@@ -391,7 +391,7 @@ h2 {
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 6.4rem;
   line-height: 77px;
 }
 
@@ -399,7 +399,7 @@ h2 {
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 5.0rem;
   line-height: 61px;
 }
 
@@ -462,6 +462,10 @@ h2 {
   border-radius: 11px;
 }
 
+.etc, .no{
+  display: none;
+}
+
 @media (max-width:1200px){
   :root{
     --grid-width: 960px;
@@ -479,5 +483,119 @@ h2 {
 
   html{
     font-size: 6px;
+  }
+}
+
+@media (max-width:768px){
+  :root{
+    --grid-width: 328px;
+  }
+
+  html{
+    font-size: 6px;
+  }
+
+  .main .title{
+    letter-spacing: 2.5px !important;
+  }
+
+  .main .des{
+    font-size: 4rem !important;
+  }
+
+  .main{
+    height: auto;
+    margin-bottom: 20% !important;
+  }
+
+  .grid .songs .songs-table .table-album-type,
+  .grid .songs .songs-table .table-time,
+  .grid .songs .songs-table .table-plays,
+  .grid .songs .songs-table .table-heart,
+  .grid .songs .songs-table .table-play-icon,
+  .grid .songs .songs-table .tr{
+    display: none;
+  }
+
+  .etc, .no{
+    display: inline !important;
+  }
+
+  .no{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .grid .songs{
+    height: 347px;
+  }
+
+  .grid .songs .songs-table {
+    grid-template-columns: 11.9% 13% 63.2% 11.9%;
+    grid-template-rows: repeat(5, 20%);
+  }
+
+  .grid .songs .songs-table .table-album{
+    width: 45px;
+    height: 45px;
+  }
+
+  .grid .songs .songs-table .table-music{
+    margin-left: 18px;
+  }
+
+  .noteworthy-albums{
+    height: 235px !important;
+  }
+
+  .noteworthy-albums .album-list{
+    width: 560px !important;
+    overflow-x: scroll;
+  }
+  .noteworthy-albums .album-box{
+    width: 130px !important;
+    height: 176px !important;
+  }
+
+  .recommended-albums{
+    height: 750px !important;
+    margin-bottom: 11%;
+  }
+
+  .recommended-albums .album-images{
+    flex-direction: column;
+    height: 100% !important;
+  }
+
+  .recommended-albums .image-side{
+    flex-direction: row !important;
+  }
+
+  .recommended-albums .album-images .image01{
+    width: 100% !important;
+  }
+
+  .recommended-albums .album-images .cover-big{
+    width: 100% !important;
+    height: 48% !important;
+  }
+
+  .recommended-albums .album-images .image-side{
+    width: 100% !important;
+  }
+
+  .recommended-albums .album-images .image-side img{
+    width: 49%;
+  }
+
+  .recommended-albums .album-images .cover-small{
+    width: 49% !important;
+    height: 100% !important;
+  }
+
+  .recommended-albums .album-images .cover-02,
+  .recommended-albums .album-images .cover-04{
+    right: 0;
   }
 }

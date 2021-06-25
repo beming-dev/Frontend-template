@@ -563,3 +563,13 @@
     font-size: 6px;
   }
 }
+
+@media (max-width:768px){
+  :root{
+    --grid-width: 360px;
+  }
+
+  html{
+    font-size: 6px;
+  }
+}

@@ -139,3 +139,33 @@
 .gallery-nav li.gallery-item-selected {
   background: #555;
 }
+
+
+@media (max-width:768px){
+  .gallery-item-1, .gallery-item-3{
+    visibility: hidden;
+  }
+
+  .gallery-item-2{
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-controls{
+    margin: 0;
+  }
+
+  .gallery{
+    margin-top: 30px;
+  }
+
+  .gallery-nav{
+    bottom: -35px;
+  }
+
+  .gallery-nav li{
+    margin: 0 10px;
+    width: 7px;
+    height: 7px;
+  }
+}

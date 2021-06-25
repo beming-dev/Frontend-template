@@ -555,7 +555,14 @@ h2 {
     justify-content: unset !important;
     flex-wrap: nowrap;
     overflow-x: auto;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
+
+  .noteworthy-albums .album-list::-webkit-scrollbar{
+    display: none;
+  }
+
   .noteworthy-albums .album-box{
     flex: 0 0 auto;
     width: 130px !important;

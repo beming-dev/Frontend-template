@@ -66,3 +66,7 @@ button {
   border: none;
   outline: none;
 }
+
+.current{
+  text-decoration: underline;
+}

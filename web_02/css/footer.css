@@ -95,3 +95,9 @@
     --footer-font-03:15px;
   }
 }
+
+@media(max-width:768px){
+  .footer-grid .more{
+    display: none !important;
+  }
+}

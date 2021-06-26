@@ -38,12 +38,10 @@
   opacity: 1;
   width: 41%;
   z-index: 1;
+  filter: blur(4px);
 }
 
 .gallery-item-2 {
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
-    0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
-    0 0 100px rgba(255, 255, 255, 0.1);
   height: 77.75%;
   opacity: 1;
   left: 50%;
@@ -132,7 +130,7 @@
   background: #ccc;
   border-radius: 50%;
   height: 10px;
-  margin: 0 16px;
+  margin: 0 10px;
   width: 10px;
 }
 

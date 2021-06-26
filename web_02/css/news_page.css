@@ -188,6 +188,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+}
+
+.trend .trend-container:nth-child(4) {
+  border: none;
 }
 
 .trend .trend-container img {
@@ -477,7 +482,7 @@ p {
 }
 
 .blue {
-  background-color: blue !important;
+  background-color: #4A93FF !important;
 }
 
 .orange {
@@ -664,7 +669,8 @@ body{
   height: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(25px);
   background-attachment: local;
   z-index: 10000;
   display: flex;
@@ -684,6 +690,7 @@ body{
   box-shadow: inset -3px -3px 15px rgba(255, 255, 255, 0.25);
   z-index: 10002;
   margin: 0;
+  border-radius: 20px;
 }
 
 .subscribe-container .letter{

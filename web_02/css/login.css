@@ -257,3 +257,40 @@ button{
 .overlay-panel p{
     margin-bottom: 9.85%;
 }
+
+input{
+    color: white;
+}
+
+@media(max-width:1290px){
+    .container{
+        width: calc(1472px * 5/8);
+        height: calc(796px * 5/8);
+        min-height: calc(796px * 5/8);
+        margin-top: 10%;
+    }
+}
+
+@media(max-width:960px){
+    .container{
+        width: 90% !important;
+        height: 80%;
+        margin-top: 5%;
+    }
+
+    .sign-in-container{
+        width: 100% !important;
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+    }
+
+    .sign-up-container{
+        width: 100% !important;
+        transform: translateX(0) !important;
+        opacity: 1 !important;
+    }
+
+    .overlay-container{
+        width: 100% !important;
+    }
+}

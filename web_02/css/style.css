@@ -279,7 +279,7 @@
     font-size: 6px !important;
   }
 
-  .main-nav{
+  .main-nav {
     height: auto !important;
   }
 
@@ -292,7 +292,7 @@
     display: none;
   }
 
-  .content {
+  .main-background .content {
     align-self: center;
     display: flex;
     flex-direction: column;

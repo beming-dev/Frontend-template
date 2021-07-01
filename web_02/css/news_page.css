@@ -79,7 +79,7 @@
 .hot-news .author {
   font-style: normal;
   font-weight: 600;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 120%;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 4.66%;
@@ -188,7 +188,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .trend .trend-container:nth-child(4) {
@@ -229,7 +229,7 @@
 .trend .trend-container .info .video-info span {
   font-style: normal;
   font-weight: 300;
-  font-size: 1.0rem;
+  font-size: 1rem;
   line-height: 1rem;
   margin-right: 13px;
 }
@@ -324,7 +324,7 @@ p {
 .billboard-container .top .left .text-area .icons span {
   padding: 6px 10px;
   font-weight: 500;
-  font-size: 1.0rem;
+  font-size: 1rem;
   background: #83558e;
   border-radius: 14px;
   text-align: center;
@@ -339,7 +339,7 @@ p {
 .billboard-container .icons span {
   padding: 6px 10px;
   font-weight: 500;
-  font-size: 1.0rem;
+  font-size: 1rem;
   background: #83558e;
   border-radius: 14px;
   text-align: center;
@@ -433,7 +433,7 @@ p {
 .billboard-container .top .right .container .icons span {
   padding: 6px 10px;
   font-weight: 500;
-  font-size: 1.0rem;
+  font-size: 1rem;
   background: #83558e;
   border-radius: 14px;
   text-align: center;
@@ -467,7 +467,7 @@ p {
   position: relative;
 }
 
-.billboard-container .bottom .item-02 .image{
+.billboard-container .bottom .item-02 .image {
   width: 100%;
 }
 
@@ -482,7 +482,7 @@ p {
 }
 
 .blue {
-  background-color: #4A93FF !important;
+  background-color: #4a93ff !important;
 }
 
 .orange {
@@ -593,6 +593,7 @@ p {
   margin-bottom: calc(var(--grid-width) * 132 / 1200);
   display: flex;
   position: relative;
+  border-radius: 15px;
 }
 
 .subscribe img {
@@ -660,11 +661,11 @@ p {
   top: 27%;
 }
 
-body{
+body {
   z-index: 0;
 }
 
-.loading{
+.loading {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -678,7 +679,7 @@ body{
   align-items: center;
 }
 
-.subscribe-container{
+.subscribe-container {
   width: 681px;
   height: 477px;
   display: flex;
@@ -693,7 +694,7 @@ body{
   border-radius: 20px;
 }
 
-.subscribe-container .letter{
+.subscribe-container .letter {
   position: absolute;
   top: -47px;
   left: calc(50% - 47px);
@@ -701,7 +702,7 @@ body{
   height: 94px;
 }
 
-.subscribe-container .exit{
+.subscribe-container .exit {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -709,7 +710,7 @@ body{
   height: 27px;
 }
 
-.subscribe-container span:nth-child(3){
+.subscribe-container span:nth-child(3) {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -718,7 +719,7 @@ body{
   margin-bottom: 3%;
 }
 
-.subscribe-container span:nth-child(4){
+.subscribe-container span:nth-child(4) {
   font-size: 22px;
   line-height: 141.02%;
   text-align: center;
@@ -727,12 +728,12 @@ body{
   margin-bottom: 7%;
 }
 
-.subscribe-container input{
+.subscribe-container input {
   outline: none;
   border: none;
 }
 
-.subscribe-container input[type=email]{
+.subscribe-container input[type="email"] {
   width: 61%;
   height: 11.8%;
   padding: 0 3%;
@@ -745,10 +746,10 @@ body{
   margin-bottom: 4%;
 }
 
-.subscribe-container button{
+.subscribe-container button {
   width: 67%;
   height: 11.8%;
-  background: linear-gradient(90deg, #FF5033 0%, #FF8016 100%);
+  background: linear-gradient(90deg, #ff5033 0%, #ff8016 100%);
   border-radius: 53px;
   color: white;
   font-weight: 600;
@@ -762,16 +763,16 @@ body{
   align-items: center;
 }
 
-.circle{
+.circle {
   width: 30px;
   height: 30px;
   border-radius: 30px 30px 0 0;
   border-top: 2px solid white;
   animation: rotate_image 0.6s linear infinite;
-} 
+}
 
-@keyframes rotate_image{
-100% {
+@keyframes rotate_image {
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -792,7 +793,7 @@ body{
 .check {
   animation: start 0.5s ease both;
   /* Override default play state paused of codepen iframe */
-  animation-play-state: running!important;
+  animation-play-state: running !important;
 }
 
 @keyframes start {
@@ -801,7 +802,7 @@ body{
     width: 0;
     height: 0;
   }
-  
+
   50% {
     opacity: 1;
     width: 0;
@@ -812,12 +813,11 @@ body{
   }
 }
 
-
-@media (max-width:1200px){
-  :root{
-    --grid-width:960px;
+@media (max-width: 1200px) {
+  :root {
+    --grid-width: 960px;
   }
-  html{
+  html {
     font-size: 8px;
   }
 
@@ -826,12 +826,121 @@ body{
   }
 }
 
-@media (max-width:960px){
-  :root{
-    --grid-width: 768px;
+@media (max-width: 960px) {
+  :root {
+    --grid-width: 750px;
   }
 
-  html{
+  html {
     font-size: 6px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --grid-width: 345px;
+  }
+
+  html {
+    font-size: 6px !important;
+  }
+
+  .trend {
+    display: none;
+  }
+
+  .hot-news-back {
+    height: 383px;
+    top: -30px;
+  }
+
+  .hot-news {
+    width: 100%;
+    margin: 0;
+    margin-top: 50px !important;
+  }
+
+  .hot-news .title {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .hot-news .info {
+    width: 208px;
+    height: 20px;
+    padding: 0;
+  }
+
+  .hot-news .info img {
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+  }
+
+  .hot-news .info .border {
+    height: 15px;
+    margin: 0;
+    margin-right: 8px;
+  }
+
+  .billboard-news {
+    height: 327px;
+  }
+
+  .billboard-news .top {
+    display: none;
+  }
+
+  .billboard-news .bottom .item-01,
+  .billboard-news .bottom .item-03 {
+    display: none;
+  }
+
+  .billboard-news .bottom .item-02 {
+    width: 100%;
+    height: 263px;
+  }
+
+  .billboard-news .bottom .item-02 .icons {
+    top: 20px;
+    left: 21px;
+  }
+
+  .billboard-news .bottom .item-02 .profile img:nth-child(1) {
+    width: 26px;
+    height: 26px;
+  }
+
+  .latest-news {
+    height: 400px;
+  }
+
+  .latest-news .vertical {
+    display: none !important;
+  }
+
+  .latest-news .horizontal-container {
+    width: 100% !important;
+  }
+
+  .subscribe {
+    width: 328px !important;
+    height: 61px !important;
+  }
+
+  .subscribe .send {
+    display: none;
+  }
+
+  .subscribe .text-01 {
+    font-size: 14px;
+  }
+
+  .subscribe .text-02 {
+    font-size: 12px;
+  }
+
+  .subscribe .left {
+    margin: 0 !important;
   }
 }

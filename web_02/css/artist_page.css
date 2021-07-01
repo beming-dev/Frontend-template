@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: calc(100vw * 179 / 96);
+  /* height: calc(100vw * 179 / 96); */
   background-image: url("../assets/images/artist_background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -791,5 +791,9 @@
   .top-rated .cards .card .card-info span{
     font-size: 1.8rem;
     color:rgba(255, 255, 255, 0.5); 
+  }
+
+  .grid .ad{
+    height: 60px !important;
   }
 }

@@ -845,6 +845,10 @@ body {
     font-size: 6px !important;
   }
 
+  .hot-news-back::before {
+    background-image: url("../assets/images/hot_news_mobile.png");
+  }
+
   .trend {
     display: none;
   }
@@ -862,6 +866,12 @@ body {
 
   .hot-news .title {
     width: 100%;
+    font-size: 0px;
+  }
+
+  .hot-news .title::before {
+    content: "Robert Fox \A and Eleanor rule \A the world's pop charts";
+    white-space: pre;
     font-size: 30px;
   }
 
@@ -885,6 +895,7 @@ body {
 
   .billboard-news {
     height: 327px;
+    margin-bottom: 20%;
   }
 
   .billboard-news .top {
@@ -913,6 +924,7 @@ body {
 
   .latest-news {
     height: 400px;
+    margin-bottom: 20%;
   }
 
   .latest-news .vertical {
@@ -932,15 +944,68 @@ body {
     display: none;
   }
 
+  .subscribe .text-area .left {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
   .subscribe .text-01 {
     font-size: 14px;
+    margin-bottom: 0;
   }
 
   .subscribe .text-02 {
+    font-size: 0px;
+  }
+
+  .subscribe .text-02::before {
+    content: "Sign up with your email address to receive news";
     font-size: 12px;
   }
 
   .subscribe .left {
     margin: 0 !important;
+  }
+
+  .loading .subscribe-container {
+    width: 292px;
+    height: 223px;
+  }
+
+  .subscribe-container .letter {
+    width: 47px;
+    height: 47px;
+    top: -23.5px;
+    left: calc(50% - 23.5px);
+  }
+
+  .subscribe-container .exit {
+    width: 15px;
+    height: 15px;
+    top: 16px;
+    right: 16px;
+  }
+
+  .subscribe-container span:nth-child(3) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .subscribe-container span:nth-child(4) {
+    font-size: 14px;
+    line-height: 145.52%;
+    letter-spacing: 0.01em;
+  }
+
+  .subscribe-container input[type="email"] {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .subscribe-container button {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
   }
 }

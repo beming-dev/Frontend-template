@@ -45,6 +45,7 @@
   color: transparent;
   -webkit-background-clip: text;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .grid .songs {

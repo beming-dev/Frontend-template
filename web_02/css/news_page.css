@@ -824,6 +824,11 @@ body {
   .hot-news .info {
     width: 64%;
   }
+
+  .billboard-container .bottom .item-02 .icons {
+    top: 20px;
+    left: 20px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -833,6 +838,24 @@ body {
 
   html {
     font-size: 6px !important;
+  }
+
+  .hot-news .info {
+    width: 70%;
+  }
+
+  .trend {
+    width: 27%;
+    height: 80%;
+  }
+
+  .trend .trend-container {
+    height: 21%;
+  }
+
+  .billboard-container .bottom .item-02 .icons {
+    top: 15px;
+    left: 15px;
   }
 }
 

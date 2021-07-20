@@ -4,11 +4,31 @@ import "./style.scss";
 const Carousel = () => {
   const slider = useRef();
   const bar = useRef();
+  const instruction = useRef();
+  const structure = useRef();
+  const location = useRef();
   const refs = [useRef(), useRef(), useRef(), useRef(), useRef()];
+  const text = [
+    { structure: "Lotte Tower", location: "Songpa-Gu" },
+    { structure: "N Seoul Tower", location: "Yongsan-Gu" },
+    { structure: "01", location: "Songpa-Gu" },
+    { structure: "02", location: "Yongsan-Gu" },
+    { structure: "03", location: "Yongsan-Gu" },
+  ];
 
-  const onPrev = () => {
+  const setText = (no) => {
+    instruction.current.style.display = "none";
+    setTimeout(() => {
+      structure.current.innerText = text[no].structure;
+      location.current.innerText = text[no].location;
+      instruction.current.style.display = "flex";
+    }, 500);
+  };
+
+  const onNext = () => {
     for (let i = 0; i < refs.length; i++) {
       let no = refs[i].current.dataset.no;
+      setText(no - 1);
       refs[i].current.classList.remove(`img-0${no}`);
       if (no - 1 < 1) no = refs.length;
       else no -= 1;
@@ -17,9 +37,10 @@ const Carousel = () => {
     }
     setBar();
   };
-  const onNext = () => {
+  const onPrev = () => {
     for (let i = 0; i < refs.length; i++) {
       let no = refs[i].current.dataset.no;
+      setText(no - 1);
       refs[i].current.classList.remove(`img-0${no}`);
       no = parseInt(no);
       if (no + 1 > refs.length) no = 1;
@@ -75,6 +96,14 @@ const Carousel = () => {
           ref={refs[4]}
           data-no="5"
         />
+        <div className="instruction" ref={instruction}>
+          <span className="structure" ref={structure}>
+            N Seoul Tower
+          </span>
+          <span className="location" ref={location}>
+            Yongsan-Gu
+          </span>
+        </div>
       </div>
       <div className="controller">
         <span className="start">01</span>

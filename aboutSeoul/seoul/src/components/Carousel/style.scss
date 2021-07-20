@@ -50,9 +50,37 @@
     }
 
     .img-05 {
-      left: 724px;
+      left: 300px;
       opacity: 0;
       z-index: 1;
+    }
+
+    .instruction {
+      width: 218.4px;
+      height: 70px;
+      position: absolute;
+      bottom: -25.2px;
+      left: 155.6px;
+      z-index: 6;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 0 0 15px 15px;
+
+      .structure {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 132%;
+        margin-left: 10px;
+      }
+
+      .location {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 132%;
+        margin-left: 10px;
+      }
     }
   }
 

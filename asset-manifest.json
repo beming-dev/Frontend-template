@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/beming-dev/about-seoul/static/css/main.7375dd02.chunk.css",
+    "main.js": "/beming-dev/about-seoul/static/js/main.e3da6fef.chunk.js",
+    "main.js.map": "/beming-dev/about-seoul/static/js/main.e3da6fef.chunk.js.map",
+    "runtime-main.js": "/beming-dev/about-seoul/static/js/runtime-main.61f21a14.js",
+    "runtime-main.js.map": "/beming-dev/about-seoul/static/js/runtime-main.61f21a14.js.map",
+    "static/js/2.33fbedf9.chunk.js": "/beming-dev/about-seoul/static/js/2.33fbedf9.chunk.js",
+    "static/js/2.33fbedf9.chunk.js.map": "/beming-dev/about-seoul/static/js/2.33fbedf9.chunk.js.map",
+    "index.html": "/beming-dev/about-seoul/index.html",
+    "static/css/main.7375dd02.chunk.css.map": "/beming-dev/about-seoul/static/css/main.7375dd02.chunk.css.map",
+    "static/js/2.33fbedf9.chunk.js.LICENSE.txt": "/beming-dev/about-seoul/static/js/2.33fbedf9.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/beming-dev/about-seoul/static/media/home_bg.65570db7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61f21a14.js",
+    "static/js/2.33fbedf9.chunk.js",
+    "static/css/main.7375dd02.chunk.css",
+    "static/js/main.e3da6fef.chunk.js"
+  ]
+}

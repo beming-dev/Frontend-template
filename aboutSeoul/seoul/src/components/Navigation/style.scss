@@ -1,0 +1,39 @@
+.Navigation {
+  width: 77%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+
+  .logo {
+    width: 115px;
+  }
+
+  .navList {
+    // width: 694px;
+    width: 47%;
+    min-width: 450px;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .icons {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

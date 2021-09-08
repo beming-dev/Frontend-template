@@ -672,6 +672,7 @@ body {
   top: 0;
   background: rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
   background-attachment: local;
   z-index: 10000;
   display: flex;
